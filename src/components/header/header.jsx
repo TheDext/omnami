@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./header.scss";
 import logoMob from "../../images/icons/logoDesktop.png";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import AuthLayout from "../../layouts/authLayout/authLayout";
 
 const Header = () => {
     const [authModalActive, setAuthModalActive] = useState(false);
-    const location = useLocation();
-    console.log(location);
     return (
         <>
             <div className="header">

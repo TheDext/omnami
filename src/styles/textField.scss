@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+.text-field {
+    // .text-field__label
+    &__label {
+        font-weight: 600;
+        line-height: 27px;
+        color: $textSecondary;
+        padding: 0 0 5px 15px;
+        display: block;
+    }
+    // .text-field__input
+    &__input {
+        display: block;
+        background: #ffffff;
+        color: $textPrimary;
+        border: 1px solid #c8c8c8;
+        border-radius: 20px;
+        padding: 16px 20px;
+        width: 100%;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    // .text-field__error
+    &__error {
+        color: $red;
+        padding: 5px 0 0 15px;
+    }
+}

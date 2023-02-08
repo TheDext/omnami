@@ -1,0 +1,20 @@
+@import "../styles/fonts.scss";
+@import "../styles/reset.scss";
+@import "../styles/textField.scss";
+@import "../styles/variables.scss";
+
+._container {
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    // background: url(../images/bg.svg);
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $textPrimary;
+}

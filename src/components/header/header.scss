@@ -1,0 +1,90 @@
+.header {
+    // .header__container
+    &__container {
+    }
+    // .header__row
+    &__row {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+    }
+    // .header__column
+    &__column {
+        // .header__column_logo
+        &_logo {
+        }
+        // .header__column_info
+        &_info {
+            display: flex;
+            column-gap: 50px;
+        }
+        // .header__column_actions
+        &_actions {
+            display: flex;
+            margin-left: auto;
+            column-gap: 15px;
+        }
+    }
+    // .header__logo
+    &__logo {
+        // .header__logo_desktop
+        &_desktop {
+            img {
+                // width: 100px;
+            }
+        }
+        // .header__logo_mobile
+        &_mobile {
+        }
+    }
+}
+
+.header-info {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    // .header-info__title
+    &__title {
+        color: #393939;
+    }
+    // .header-info__sub
+    &__sub {
+        color: #656565;
+    }
+}
+.header-action {
+    // .header-action_login
+    &_login {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: #33333356;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: #33333330;
+        }
+    }
+    // .header-action_cart
+    &_cart {
+        width: 165px;
+        background-color: #ff8b0a;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+
+        font-family: "Nunito";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: #ff8d0ad6;
+        }
+    }
+}

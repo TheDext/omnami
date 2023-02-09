@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../components/header/header";
 import Combo from "../components/products/combo";
-// import ProductSlider from "../components/productSlider/producSlider";
+import useMockData from "../utils/mockData";
 
 const MainLayout = () => {
     return (
         <>
             <Header />
             <Combo />
-            {/* <ProductSlider /> */}
+            <button onClick={() => useMockData()}></button>
         </>
     );
 };

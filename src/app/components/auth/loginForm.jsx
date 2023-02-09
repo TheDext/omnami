@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import TextField from "../textField";
 import { validator } from "../../utils/validator";
+import { useDispatch } from "react-redux";
+import { login } from "../../store/users";
 
 const LoginForm = () => {
+    const dispatch = useDispatch();
     const [data, setData] = useState({
         email: "",
         password: ""
@@ -28,6 +31,7 @@ const LoginForm = () => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
+        dispatch(login({ payload: data }));
         console.log("Submit_Data", data);
     };
 
@@ -60,7 +64,11 @@ const LoginForm = () => {
                 error={errors.password}
                 onChange={handleChange}
             />
-            <button className="auth-modal__submit" type="submit" disabled={!isValid}>
+            <button
+                className="auth-modal__submit"
+                type="submit"
+                disabled={!isValid}
+            >
                 Авторизоваться
             </button>
         </form>

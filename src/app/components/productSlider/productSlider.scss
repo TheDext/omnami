@@ -1,6 +1,10 @@
 @import "../../styles/variables.scss";
 
 .product-slider {
+    cursor: pointer;
+    &._disabled {
+        pointer-events: none;
+    }
     padding: 20px 0;
     // .product-slider__slide
     &__slide {

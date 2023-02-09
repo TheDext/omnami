@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import getRandomInt from "../../../utils/getRandomInt";
+import getRandomInt from "../../utils/getRandomInt";
 
 const comboNames = [
     "Комбо 1",
@@ -7,7 +7,15 @@ const comboNames = [
     "Комбо 3",
     "Комбо 4",
     "Комбо 5",
-    "Комбо 6"
+    "Комбо 5",
+    "Комбо 5",
+    "Комбо 5",
+    "Комбо 5",
+    "Комбо 5",
+    "Комбо 5",
+    "Комбо 6",
+    "Комбо 7",
+    "Комбо 8"
 ];
 const comboCompositions = [
     "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
@@ -33,12 +41,25 @@ const fetchAll = () =>
             resolve(combo);
         }, 2000);
     });
-function getPart(n) {
-    if (n > combo.length - 1) return;
-    return combo[n];
-}
+
+const getPart = () =>
+    new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(combo.slice(0, 5));
+        }, 1000);
+    });
+
+const getOneProduct = (index) => {
+    if (index > combo.length) return;
+    return new Promise((resolve) => {
+        window.setTimeout(function () {
+            resolve(combo[index]);
+        }, 2000);
+    });
+};
 
 export default {
     fetchAll,
-    getPart
+    getPart,
+    getOneProduct
 };

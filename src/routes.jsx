@@ -1,7 +1,7 @@
 import React from "react";
-import Test from "./components/test";
-import AuthLayout from "./layouts/authLayout/authLayout";
-import MainLayout from "./layouts/mainLayout";
+import Test from "./app/components/test";
+import AuthLayout from "./app/layouts/authLayout/authLayout";
+import MainLayout from "./app/layouts/mainLayout";
 
 const routes = [
     {

@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import getRandomInt from "../../../utils/getRandomInt";
+import getRandomInt from "../../utils/getRandomInt";
 
 const wokNames = [
     "Удон с овощами в пикантном соусе",

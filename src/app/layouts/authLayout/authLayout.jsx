@@ -4,8 +4,11 @@ import PropTypes from "prop-types";
 import "./authLayout.scss";
 import LoginForm from "../../components/auth/loginForm";
 import RegisterForm from "../../components/auth/registerForm";
+import { useSelector } from "react-redux";
+import { getIsLoggedIn } from "../../store/users";
 
 const AuthLayout = ({ isActive, setActive }) => {
+    const isLogged = useSelector(getIsLoggedIn());
     const type = "login";
     const [formType, setFormType] = useState(
         type === "register" ? type : "login"
@@ -15,7 +18,8 @@ const AuthLayout = ({ isActive, setActive }) => {
             prevState === "register" ? "login" : "register"
         );
     };
-    const setClassName = isActive ? `auth-modal _active` : "auth-modal";
+    const setClassName =
+        isActive && !isLogged ? `auth-modal _active` : "auth-modal";
 
     return (
         <div

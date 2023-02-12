@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import Skeleton from "../skeleton";
 import ProductCard from "../productCard";
 
-const ProductSlider = ({ products, onGetProduct, isLoading }) => {
+const ProductSlider = ({ products, isLoading }) => {
     return (
         <Swiper
             spaceBetween={30}
@@ -16,22 +16,27 @@ const ProductSlider = ({ products, onGetProduct, isLoading }) => {
                 console.log("onSlideChange");
             }}
             onSliderFirstMove={() => {
-                onGetProduct();
+                console.log("onSliderFirstMove");
             }}
             onSwiper={(swiper) => console.log(swiper)}
-            className={`product-slider _container ${
-                isLoading ? "_disabled" : ""
-            }`}
+            className={`product-slider ${isLoading ? "_disabled" : ""}`}
         >
             {isLoading
                 ? [...new Array(5)].map((_, i) => (
-                      <SwiperSlide key={i} className="product-slider__slide">
+                      <SwiperSlide
+                          key={`combo_${i}`}
+                          className="product-slider__slide"
+                      >
                           <Skeleton />
                       </SwiperSlide>
                   ))
                 : products.map((p) => (
-                      <SwiperSlide key={p.id} className="product-slider__slide">
+                      <SwiperSlide
+                          key={p._id}
+                          className="product-slider__slide"
+                      >
                           <ProductCard
+                              id={p._id}
                               name={p.name}
                               weight={p.weight}
                               composition={p.composition}
@@ -44,7 +49,6 @@ const ProductSlider = ({ products, onGetProduct, isLoading }) => {
 };
 ProductSlider.propTypes = {
     products: PropTypes.array,
-    onGetProduct: PropTypes.func,
     isLoading: PropTypes.bool
 };
 export default ProductSlider;

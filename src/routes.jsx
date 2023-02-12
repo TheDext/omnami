@@ -1,5 +1,6 @@
 import React from "react";
-import Test from "./app/components/test";
+import Cart from "./app/components/pages/cart/cart";
+import Profile from "./app/components/pages/profile/profile";
 import AuthLayout from "./app/layouts/authLayout/authLayout";
 import MainLayout from "./app/layouts/mainLayout";
 
@@ -13,8 +14,12 @@ const routes = [
         element: <AuthLayout />
     },
     {
-        path: "test",
-        element: <Test />
+        path: "cart",
+        element: <Cart />
+    },
+    {
+        path: "profile",
+        element: <Profile />
     }
 ];
 export default routes;

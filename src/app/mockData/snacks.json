@@ -1,0 +1,37 @@
+[
+    {
+        "_id": "y3GzA98LKS3FYRjrY9Guu",
+        "name": "Креветки в кляре",
+        "price": 456,
+        "composition": "Тигровые креветики жареные в темпуре",
+        "weight": "450гр 150ккал / 100гр"
+    },
+    {
+        "_id": "SasLDF5dIvfN6vee1cd7Y",
+        "name": "Наггетсы",
+        "price": 407,
+        "composition": "Куриные наггетсы в панировке",
+        "weight": "450гр 150ккал / 100гр"
+    },
+    {
+        "_id": "Lg_Nt4AcModPMKZMbKr9i",
+        "name": "Луковые кольца",
+        "price": 469,
+        "composition": "Луковые кольца в панировке",
+        "weight": "450гр 150ккал / 100гр"
+    },
+    {
+        "_id": "1WJYQRAi-RijG_G9JZmhi",
+        "name": "Картофель фри",
+        "price": 565,
+        "composition": "Картофель фри",
+        "weight": "450гр 150ккал / 100гр"
+    },
+    {
+        "_id": "9WSXH555sQUGDnCwBvBol",
+        "name": "Картофель по-деревенски",
+        "price": 576,
+        "composition": "Картофельные дольки со специями",
+        "weight": "450гр 150ккал / 100гр"
+    }
+]

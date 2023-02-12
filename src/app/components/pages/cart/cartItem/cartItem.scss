@@ -1,0 +1,48 @@
+@import "../../../../styles/variables.scss";
+.item-cart {
+    display: flex;
+    // column-gap: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    // .item-cart__main
+    &__main {
+        display: flex;
+        flex: 0 1 460px;
+        column-gap: 15px;
+        min-width: 285px;
+    }
+    // .item-cart__img
+    &__img {
+        img {
+            max-width: 125px;
+        }
+    }
+    // .item-cart__quantity
+    &__quantity {
+    }
+    // .item-cart__sum
+    &__sum {
+    }
+    // .item-cart__remove
+    &__remove {
+        cursor: pointer;
+        &:hover {
+            * {
+                transition: all 0.3s ease 0s;
+                fill: $red;
+            }
+        }
+    }
+}
+.info-item-cart {
+    // .info-item-cart__name
+    &__name {
+        font-weight: 700;
+    }
+    // .info-item-cart__composition
+    &__composition {
+        margin-top: 10px;
+    }
+}

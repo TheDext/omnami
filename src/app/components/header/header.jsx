@@ -3,8 +3,12 @@ import "./header.scss";
 import logoMob from "../../images/icons/logoDesktop.png";
 import { NavLink } from "react-router-dom";
 import AuthLayout from "../../layouts/authLayout/authLayout";
+import { useSelector } from "react-redux";
+import { getIsLoggedIn } from "../../store/users";
 
 const Header = () => {
+    const isLogged = useSelector(getIsLoggedIn());
+    console.log("isLogged", isLogged);
     const [authModalActive, setAuthModalActive] = useState(false);
     return (
         <>
@@ -41,15 +45,22 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="header__column header__column_actions">
-                            <button
-                                onClick={() =>
-                                    setAuthModalActive(
-                                        (prevState) => !prevState
-                                    )
-                                }
-                                className="header-action header-action_login"
-                            ></button>
-                            <NavLink to="/test">
+                            {isLogged ? (
+                                <NavLink
+                                    className="header-action header-action_login"
+                                    to="/profile"
+                                ></NavLink>
+                            ) : (
+                                <button
+                                    className="header-action header-action_login"
+                                    onClick={() => {
+                                        setAuthModalActive(
+                                            (prevState) => !prevState
+                                        );
+                                    }}
+                                ></button>
+                            )}
+                            <NavLink to="/cart">
                                 <button className="header-action header-action_cart">
                                     Корзина
                                 </button>

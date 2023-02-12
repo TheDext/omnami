@@ -27,13 +27,33 @@ export function removeAuthData() {
     localStorage.removeItem(REFRESH_KEY);
     localStorage.removeItem(EXPIRES_KEY);
 }
-
 export function getTokenExpiresDate() {
     return localStorage.getItem(EXPIRES_KEY);
 }
 export function getUserId() {
     return localStorage.getItem(USERID_KEY);
 }
+
+export const addToCart = (id) => {
+    const cart = JSON.parse(localStorage.getItem("cart"));
+    if (!cart) {
+        return localStorage.setItem("cart", JSON.stringify([{ id, count: 1 }]));
+    }
+
+    const newCart = cart.map((product) =>
+        product.id === id
+            ? { id, count: (product.count = product.count + 1) }
+            : [...cart, { id, count: 1 }]
+    );
+
+    console.log(newCart);
+    localStorage.removeItem("cart");
+    localStorage.setItem("cart", JSON.stringify(newCart));
+};
+
+// export const getProducrs = () => {
+//     localStorage.
+// };
 
 const localStorageService = {
     setTokens,

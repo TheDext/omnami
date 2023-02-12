@@ -1,26 +1,37 @@
 import React, { useEffect, useState } from "react";
-import TextField from "../textField";
-import { validator } from "../../utils/validator";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { login } from "../../store/users";
+import { validator } from "../../utils/validator";
+import TextField from "../textField";
 
 const LoginForm = () => {
-    const dispatch = useDispatch();
     const [data, setData] = useState({
         email: "",
         password: ""
     });
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [errors, setErrors] = useState({});
+
     useEffect(() => {
         validate();
     }, [data]);
+
+    const redirect = () => {
+        const path = "/profile";
+        navigate(path);
+    };
 
     const validate = () => {
         const errors = validator(data, validatorConfig);
         setErrors(errors);
         return Object.keys(errors).length === 0;
     };
+
     const isValid = Object.keys(errors).length === 0;
+
     const handleChange = (target) => {
         setData((prevState) => ({
             ...prevState,
@@ -31,8 +42,9 @@ const LoginForm = () => {
         e.preventDefault();
         const isValid = validate();
         if (!isValid) return;
-        dispatch(login({ payload: data }));
-        console.log("Submit_Data", data);
+
+        dispatch(login({ payload: data, redirect }));
+        // console.log("Submit_Data", data);
     };
 
     const validatorConfig = {

@@ -1,14 +1,20 @@
 import React from "react";
+import CategoriesList from "../components/cetegoriesList/categoriesList";
 import Header from "../components/header/header";
-import Combo from "../components/products/combo";
-import useMockData from "../utils/mockData";
+import MainSlider from "../components/mainSlider/mainSlider";
+import Combo from "../components/productsBlocks/combo";
+import Rolls from "../components/productsBlocks/rolls";
+import Sets from "../components/productsBlocks/sets";
 
 const MainLayout = () => {
     return (
         <>
             <Header />
+            <CategoriesList />
+            <MainSlider />
             <Combo />
-            <button onClick={() => useMockData()}></button>
+            <Rolls />
+            <Sets />
         </>
     );
 };

@@ -8,7 +8,6 @@ import { createStore } from "./app/store/createStore";
 // import reportWebVitals from './reportWebVitals';
 
 const store = createStore();
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>

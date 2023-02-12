@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 import httpService from "../services/http.service";
+import combo from "../mockData/combo.json";
+import pizza from "../mockData/pizza.json";
+import rolls from "../mockData/rolls.json";
+import sets from "../mockData/sets.json";
+import snacks from "../mockData/snacks.json";
+import products from "../mockData/products.json";
 
 const useMockData = () => {
     const statusConsts = {
@@ -12,7 +18,12 @@ const useMockData = () => {
     const [status, setStatus] = useState(statusConsts.idle);
     const [progress, setProgress] = useState(0);
     const [count, setCount] = useState(0);
-    const summaryCount = professions.length + qualities.length + users.length;
+    const summaryCount =
+        combo.length +
+        pizza.length +
+        rolls.length +
+        sets.length +
+        snacks.length;
     const incrementCount = () => {
         setCount((prevState) => prevState + 1);
     };
@@ -34,16 +45,28 @@ const useMockData = () => {
     }, [count]);
     async function initialize() {
         try {
-            for (const prof of professions) {
-                await httpService.put("profession/" + prof._id, prof);
+            for (const c of combo) {
+                await httpService.put("combo/" + c._id, c);
                 incrementCount();
             }
-            for (const user of users) {
-                await httpService.put("user/" + user._id, user);
+            for (const p of pizza) {
+                await httpService.put("pizza/" + p._id, p);
                 incrementCount();
             }
-            for (const qual of qualities) {
-                await httpService.put("quality/" + qual._id, qual);
+            for (const r of rolls) {
+                await httpService.put("rolls/" + r._id, r);
+                incrementCount();
+            }
+            for (const s of sets) {
+                await httpService.put("sets/" + s._id, s);
+                incrementCount();
+            }
+            for (const s of snacks) {
+                await httpService.put("snacks/" + s._id, s);
+                incrementCount();
+            }
+            for (const p of products) {
+                await httpService.put("products/" + p._id, p);
                 incrementCount();
             }
         } catch (error) {

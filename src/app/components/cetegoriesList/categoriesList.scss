@@ -1,0 +1,26 @@
+@import "../../styles/variables.scss";
+
+.categories-list {
+    display: flex;
+    column-gap: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // .categories-list__item
+    &__item {
+        &:not(:last-child) a:hover {
+            color: $orangeHover;
+        }
+    }
+    // .categories-list__link
+    &__link {
+        font-size: 16px;
+        color: $textPrimary;
+        font-weight: 600;
+        transition: all 0.3s ease 0s;
+
+        // categories-list__link_promotion
+        &_promotion {
+            color: $redHover;
+        }
+    }
+}

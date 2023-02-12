@@ -1,6 +1,11 @@
 .header {
+    position: relative;
+    z-index: 1;
     // .header__container
     &__container {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #dadada;
     }
     // .header__row
     &__row {

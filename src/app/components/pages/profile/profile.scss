@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/templates.scss";
+
+.profile {
+    // .profile__title
+    &__title {
+    }
+    // .profile__body
+    &__body {
+        border: 1px solid black;
+        display: flex;
+        column-gap: 25px;
+        margin-top: 25px;
+    }
+    // .profile__switch
+    &__switch {
+        border: 1px solid green;
+        flex: 0 0 255px;
+        max-height: 180px;
+    }
+    // .profile__content
+    &__content {
+        border: 1px solid red;
+        flex: 0 1 100%;
+    }
+}
+
+.switch-profile {
+    // .switch-profile__title
+    &__title {
+        cursor: pointer;
+        color: $textSecondary;
+        font-size: 20px;
+        transition: all 0.3s ease 0s;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &:not(&._active):hover {
+            color: $orangeHover;
+        }
+        &._active {
+            @extend %smallTitle;
+        }
+    }
+}

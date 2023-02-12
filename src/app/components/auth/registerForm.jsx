@@ -4,7 +4,7 @@ import { validator } from "../../utils/validator";
 import { useDispatch } from "react-redux";
 import { signUp } from "../../store/users";
 
-const LoginForm = () => {
+const RegisterForm = () => {
     const dispatch = useDispatch();
     const [data, setData] = useState({
         email: "",
@@ -105,4 +105,4 @@ const LoginForm = () => {
     );
 };
 
-export default LoginForm;
+export default RegisterForm;

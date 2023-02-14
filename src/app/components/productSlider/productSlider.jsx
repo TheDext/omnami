@@ -12,13 +12,13 @@ const ProductSlider = ({ products, isLoading }) => {
             spaceBetween={30}
             observer={true}
             slidesPerView={4}
-            onSlideChange={() => {
-                console.log("onSlideChange");
-            }}
-            onSliderFirstMove={() => {
-                console.log("onSliderFirstMove");
-            }}
-            onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => {
+            //     console.log("onSlideChange");
+            // }}
+            // onSliderFirstMove={() => {
+            //     console.log("onSliderFirstMove");
+            // }}
+            // onSwiper={(swiper) => console.log(swiper)}
             className={`product-slider ${isLoading ? "_disabled" : ""}`}
         >
             {isLoading

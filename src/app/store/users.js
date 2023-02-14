@@ -23,8 +23,6 @@ const initialState = localStorageService.getAccessToken()
           dataLoaded: false
       };
 
-console.log("initialState", initialState);
-
 const usersSlice = createSlice({
     name: "users",
     initialState,

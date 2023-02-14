@@ -8,7 +8,7 @@ import { getIsLoggedIn } from "../../store/users";
 
 const Header = () => {
     const isLogged = useSelector(getIsLoggedIn());
-    console.log("isLogged", isLogged);
+    // console.log("isLogged", isLogged);
     const [authModalActive, setAuthModalActive] = useState(false);
     return (
         <>

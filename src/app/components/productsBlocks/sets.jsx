@@ -19,10 +19,6 @@ const Sets = () => {
         }
     }, [inView]);
 
-    useEffect(() => {
-        inView ? console.log("+") : console.log("-");
-    }, [inView]);
-
     return (
         <>
             <div className="_container productBlock" ref={ref}>

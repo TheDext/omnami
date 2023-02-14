@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import img from "../images/sliders/combo/01.png";
-import { addToCart } from "../services/localStorage.service";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, getProductsCart } from "../store/cart";
+import localStorageService from "../../app/services/localStorage.service";
 
 const ProductCard = ({ id, name, weight, composition, price }) => {
-    const handleClick = () => addToCart(id);
+    const dispatch = useDispatch();
+    const products = useSelector(getProductsCart());
+
+    useEffect(() => {
+        localStorageService.setCart(products);
+    }, [products]);
+
+    const handleClick = () =>
+        dispatch(addToCart({ id, name, composition, price }));
+
     return (
         <div className="product-slider__item">
             <div className="product-slider__img">

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const cartSlice = createSlice({
     name: "cart",
     initialState: {
-        entities: JSON.parse(localStorage.getItem("cart"))
+        entities: JSON.parse(localStorage.getItem("cart")) || []
     },
     reducers: {
         cartProductAdded: (state, { payload: product }) => {

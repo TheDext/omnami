@@ -1,0 +1,39 @@
+@import "../../../../styles/templates.scss";
+
+.delivery-type {
+    // .delivery-type__titles
+    &__titles {
+        display: flex;
+        column-gap: 30px;
+    }
+    // .delivery-type__title
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        transition: all 0.3s ease 0s;
+        color: #b5b5b5;
+        cursor: pointer;
+        &._active {
+            @extend %smallTitle;
+            line-height: 27px;
+        }
+    }
+
+    // .delivery-type__type
+    &__type {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        .text-field {
+            &:first-child {
+                flex: 0 1 100%;
+                max-width: 100%;
+            }
+            flex: 0 1 25%;
+            max-width: 140px;
+        }
+    }
+}

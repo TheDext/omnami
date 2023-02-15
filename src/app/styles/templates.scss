@@ -28,6 +28,36 @@
         background-color: $orangeHover;
     }
 }
+%greyButton {
+    display: block;
+    background: $grey;
+    border-radius: 25px;
+    color: $textSecondary;
+    padding: 20px 10px;
+    transition: all 0.3s ease 0s;
+    &[disabled] {
+        background-color: $greyDisabled;
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: $greyHover;
+    }
+}
+%redButton {
+    display: block;
+    background: $red;
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 20px 10px;
+    transition: all 0.3s ease 0s;
+    &[disabled] {
+        background-color: $redDisabled;
+        pointer-events: none;
+    }
+    &:hover {
+        background-color: $redHover;
+    }
+}
 
 %box {
     background: #ffffff;

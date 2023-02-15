@@ -10,7 +10,7 @@ const ProductSlider = ({ products, isLoading }) => {
     return (
         <Swiper
             spaceBetween={30}
-            observer={true}
+            // observer={true}
             slidesPerView={4}
             // onSlideChange={() => {
             //     console.log("onSlideChange");

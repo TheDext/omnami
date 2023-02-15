@@ -1,0 +1,22 @@
+.ordering {
+    border: 1px solid red;
+    // .ordering__title
+    &__title {
+    }
+    // .ordering__body
+    &__body {
+        margin-top: 40px;
+        border: 1px solid black;
+        display: flex;
+        column-gap: 30px;
+    }
+    // .ordering__form
+    &__form {
+        border: 1px solid green;
+    }
+    // .ordering__products
+    &__products {
+        background-color: rgba(255, 166, 0, 0.47);
+        flex: 0 0 345px;
+    }
+}

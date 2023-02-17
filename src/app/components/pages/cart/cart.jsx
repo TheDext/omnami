@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -14,6 +13,7 @@ import CategoriesList from "../../cetegoriesList/categoriesList";
 import Header from "../../header/header";
 import "./cart.scss";
 import CartItem from "./cartItem/cartItem";
+import sumСalculation from "../../../utils/sumCalculation";
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -22,9 +22,6 @@ const Cart = () => {
     useEffect(() => {
         localStorageService.setCart(products);
     }, [products]);
-
-    const sumСalculation = () =>
-        products.reduce((acc, { price, count }) => acc + count * price, 0);
 
     const handleDelete = (id) => dispatch(removeFromCart(id));
     const handeIncrement = (product) => dispatch(addToCart(product));
@@ -76,14 +73,15 @@ const Cart = () => {
                     <div className="order-price">
                         Сумма заказа:{" "}
                         <span className="order-price__num">
-                            {sumСalculation()} ₽
+                            {sumСalculation(products)} ₽
                         </span>
                     </div>
                     <div className="cart-buttons">
                         <button className="cart-buttons__btn cart-buttons__btn_back">
                             Вернуться в меню
                         </button>
-                        <NavLink to="/ordering"
+                        <NavLink
+                            to="/ordering"
                             disabled={isEmpty}
                             className="cart-buttons__btn cart-buttons__btn_order"
                         >

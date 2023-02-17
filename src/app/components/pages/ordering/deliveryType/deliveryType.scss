@@ -27,13 +27,68 @@
         justify-content: space-between;
         flex-wrap: wrap;
         column-gap: 10px;
+        row-gap: 17px;
         .text-field {
             &:first-child {
                 flex: 0 1 100%;
-                max-width: 100%;
             }
-            flex: 0 1 25%;
-            max-width: 140px;
+            &:not(:first-child) {
+                flex: 0 1 25%;
+                max-width: 140px;
+            }
         }
+    }
+}
+
+.pickup {
+    &__item {
+        .css-13cymwt-control,
+        .css-t3ipsp-control {
+            background: #ffffff;
+            border: 1px solid #c8c8c8;
+            border-radius: 20px;
+            padding: 12px 20px;
+        }
+        &:first-child {
+            flex: 0 1 100%;
+        }
+        &:not(:first-child) {
+            flex: 0 1 47%;
+        }
+    }
+    select,
+    input {
+        cursor: pointer;
+    }
+}
+
+.pickup-data-picker {
+    height: 100%;
+    &__label {
+        font-weight: 600;
+        line-height: 27px;
+        color: $textSecondary;
+        padding: 0 0 5px 15px;
+        display: block;
+    }
+    // border: 1px solid red;
+
+    // .react-datepicker-wrapper,
+    // .react-datepicker__input-container,
+    // input {
+
+    // }
+
+    input {
+        height: 62px;
+        display: block;
+        width: 100%;
+        border: 1px solid green;
+        // text-align: center;
+        padding: 0 28px;
+
+        color: $textPrimary;
+        border: 1px solid #c8c8c8;
+        border-radius: 20px;
     }
 }

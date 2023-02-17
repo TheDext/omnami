@@ -12,7 +12,7 @@ const DeliveryType = ({ data, onChange, resetData }) => {
         setType(type);
     };
     return (
-        <div className="delivery-type">
+        <div className="delivery-type _box">
             <div className="delivery-type__titles">
                 <div
                     onClick={() => handleClick("delivery")}

@@ -2,18 +2,16 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import SelectField from "../../../../selectField";
 import { validator } from "../../../../../utils/validator";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "../deliveryType.scss";
+import DataPickerField from "../../../../datePickerField";
+
 const PickUp = ({ data, onChange }) => {
-    const [startDate, setStartDate] = useState(new Date());
     const [errors, setErrors] = useState({});
-    useEffect(() => {
-        onChange({ name: "date", value: Date.parse(startDate).toString() });
-    }, [startDate]);
     const pickupAddress = [
-        { value: 1, label: "ул. Донская, д. 8 стр. 1" },
-        { value: 2, label: "Проспект Вернадского, 43" },
-        { value: 3, label: "ул. Тверская, д. 11" }
+        { value: "1", label: "ул. Донская, д. 8 стр. 1" },
+        { value: "2", label: "Проспект Вернадского, 43" },
+        { value: "3", label: "ул. Тверская, д. 11" }
     ];
 
     const pickupTime = [
@@ -60,33 +58,34 @@ const PickUp = ({ data, onChange }) => {
     // const isValid = Object.keys(errors).length === 0;
 
     return (
-        <div className="delivery-type__type delivery-type__type_pickup">
-            <SelectField
-                label="Откуда заберете"
-                value={data.institutionAddress}
-                onChange={onChange}
-                defaultOption="Укажите адрес"
-                options={pickupAddress}
-                error={errors.institutionAddress}
-                name="institutionAddress"
-            />
-
-            <DatePicker
-                selected={startDate}
-                onChange={(date) => setStartDate(date)}
-                minDate={new Date()}
-                showDisabledMonthNavigation
-                dateFormat="dd.MM.yyyy"
-            />
-            <SelectField
-                label="Время"
-                value={data.time}
-                options={pickupTime}
-                onChange={onChange}
-                defaultOption="Время"
-                error={errors.time}
-                name="time"
-            />
+        <div className="delivery-type__type delivery-type__type_pickup pickup">
+            <div className="pickup__item">
+                <SelectField
+                    label="Откуда заберете"
+                    value={data.institutionAddress}
+                    onChange={onChange}
+                    defaultOption="Укажите адрес"
+                    options={pickupAddress}
+                    error={errors.institutionAddress}
+                    name="institutionAddress"
+                    placeholder=""
+                />
+            </div>
+            <div className="pickup__item">
+                <DataPickerField label="Когда заберете" onChange={onChange} />
+            </div>
+            <div className="pickup__item">
+                <SelectField
+                    label="Время"
+                    value={data.time}
+                    options={pickupTime}
+                    onChange={onChange}
+                    defaultOption="Время"
+                    error={errors.time}
+                    name="time"
+                    placeholder=""
+                />
+            </div>
         </div>
     );
 };

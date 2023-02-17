@@ -1,0 +1,16 @@
+@import "./variables.scss";
+.select-field {
+    // .select-field__label
+    &__label {
+        font-weight: 600;
+        line-height: 27px;
+        color: $textSecondary;
+        padding: 0 0 5px 15px;
+        display: block;
+    }
+    // .select-field__error
+    &__error {
+        color: $red;
+        padding: 5px 0 0 15px;
+    }
+}

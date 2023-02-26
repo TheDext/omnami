@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "OiHfS2kPWHVXJK5C_ZjqU",
+    "name": "Комбо 1",
+    "categoryName": "combo",
+    "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
+    "price": 1100,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "_id": "3n74nAAez61YdYM1H19CY",
+    "categoryName": "combo",
+    "name": "Комбо 2",
+    "composition": "Сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
+    "price": 900,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "df2cIkzAv9tFjjzW1F5pT",
+    "name": "Комбо 3",
+    "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
+    "price": 800,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "TLP_qBVU-ysgInvLBAuzi",
+    "name": "Комбо 4",
+    "composition": "Курица, сыр моцарелла, ананасы, ветчина, кукуруза",
+    "price": 1100,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "Yoydc-PVFGZX0R9EFNige",
+    "name": "Комбо 5",
+    "composition": "Томатный соус, сыр моцарелла, болгарский перец, ветчина, помидоры",
+    "price": 500,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "Yoydc-RN0_96bqhhZ6x58YH4IXb",
+    "name": "Комбо 6",
+    "composition": "Курица, сыр моцарелла, ананасы, ветчина, кукуруза",
+    "price": 650,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "_id": "Yoydc-ZMRiOJexu3SFCyzpjLk0e",
+    "categoryName": "combo",
+    "name": "Комбо 7",
+    "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
+    "price": 650,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "Yoydc-H7ebAQwcDnjPGTFxepjaE",
+    "name": "Комбо 8",
+    "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
+    "price": 830,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "categoryName": "combo",
+    "_id": "Yoydc-Ju4Xt-pWWilr2e9k-j16H",
+    "name": "Комбо 9",
+    "composition": "Сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
+    "price": 1135,
+    "weight": "450гр 150ккал / 100гр"
+  },
+  {
+    "_id": "Yoydc-qOVBVj-M8S6woz20-1RIm",
+    "categoryName": "combo",
+    "name": "Комбо 10",
+    "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
+    "price": 450,
+    "weight": "450гр 150ккал / 100гр"
+  }
+]

@@ -1,0 +1,91 @@
+@import "../../styles/variables.scss";
+
+.product {
+    background-color: #ffffff;
+    // box-shadow: -3px 11.0436px 6.0873px rgb(154 170 207 / 30%);
+    box-shadow: -3px 11px 6px rgba(154, 170, 207, 0.305);
+    border-radius: 25px;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    // padding: 20px;
+    // flex: 1 1 auto;
+
+    // .product-slider__item
+    &__item {
+        padding: 25px 20px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    // .product-slider__img
+    &__img {
+        flex: 0 0 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    // .product-slider__body
+    &__body {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    // .product-slider__title
+    &__title {
+        color: $title;
+        font-weight: 600;
+    }
+    // .product-slider__info
+    &__info {
+        margin-top: 5px;
+        color: $textSecondary;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    // .product-slider__composition
+    &__composition {
+        margin-top: 5px;
+        text-align: center;
+        flex: 1 1 auto;
+    }
+
+    .bottom-product {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        // .bottom-product-slider__price
+        &__price {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+
+            color: #393939;
+        }
+        // .bottom-product-slider__add
+        &__add {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            color: $red;
+            background-color: #ffffff;
+            padding: 10px 15px;
+            border: 2px solid #ff5358;
+            border-radius: 25px;
+            transition: all 0.3s ease 0s;
+            flex: 0 1 125px;
+            &:hover {
+                background-color: $redHover;
+                color: #ffffff;
+            }
+        }
+    }
+}

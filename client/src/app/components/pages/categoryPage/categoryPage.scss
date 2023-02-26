@@ -1,0 +1,16 @@
+.category-page {
+    padding-bottom: 145px;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        margin: 0 -15px;
+    }
+    &__column {
+        display: flex;
+        flex: 0 1 25%;
+        padding: 0 15px;
+    }
+    &__item {
+    }
+}

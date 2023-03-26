@@ -79,3 +79,26 @@ body {
         }
     }
 }
+
+.swiper-pagination {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    min-height: 15px;
+    &-bullet {
+        transition: all 0.3s ease 0s;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: $grey;
+        border-radius: 50%;
+        &-active {
+            width: 15px;
+            height: 15px;
+            background-color: $red;
+        }
+    }
+}

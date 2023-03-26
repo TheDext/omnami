@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/scss";
 import "./productSlider.scss";
 import PropTypes from "prop-types";
@@ -9,7 +10,11 @@ import ProductCard from "../productCard/productCard";
 const ProductSlider = ({ products }) => {
     return (
         <Swiper
+            modules={[Pagination]}
             className={`product-slider ${!products ? "_disabled" : ""}`}
+            pagination={{
+                clickable: true
+            }}
             breakpoints={{
                 320: {
                     centeredSlides: true,

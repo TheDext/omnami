@@ -42,11 +42,6 @@ const productSlice = createSlice({
 const { reducer: productsReducer, actions } = productSlice;
 const { productRequest, productReceive, productRequestFaied } = actions;
 
-// const isExpired = (lastFetch) => {
-//     if (Date.now() - lastFetch > 1 * 60 * 1000) return true;
-//     return false;
-// };
-
 export const loadProductList = (category) => async (dispatch) => {
     dispatch(productRequest());
     try {

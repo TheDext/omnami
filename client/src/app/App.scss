@@ -6,7 +6,7 @@
 @import "./styles/mixins.scss";
 
 body {
-    background: url("../app/images/bg.svg");
+    background: url("../app/icons/bg.svg");
     &._locked {
         overflow: hidden;
     }

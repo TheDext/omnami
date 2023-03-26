@@ -35,7 +35,6 @@ const {
 
 export const addToCart = (product) => (dispatch, getState) => {
     const cart = getState().cart.entities;
-
     if (!cart) {
         return dispatch(cartProductAdded([{ ...product, count: 1 }]));
     }

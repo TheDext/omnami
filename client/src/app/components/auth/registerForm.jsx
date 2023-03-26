@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import TextField from "../textField";
 import { validator } from "../../utils/validator";
 import { useDispatch } from "react-redux";
 import { signUp } from "../../store/users";
 import { useNavigate } from "react-router-dom";
+import TextField from "../form/textField";
 
 const RegisterForm = () => {
     const dispatch = useDispatch();
@@ -40,7 +40,6 @@ const RegisterForm = () => {
         const isValid = validate();
         if (!isValid) return;
         dispatch(signUp({ payload: data, redirect }));
-        // console.log("Submit_Data", data);
     };
 
     const validatorConfig = {
@@ -100,6 +99,7 @@ const RegisterForm = () => {
                 value={data.password}
                 error={errors.password}
                 onChange={handleChange}
+                type="password"
             />
             <button
                 className="auth-modal__submit"

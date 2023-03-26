@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 .header {
     position: relative;
     z-index: 1;
@@ -5,7 +6,6 @@
     &__container {
         padding-top: 15px;
         padding-bottom: 15px;
-        border-bottom: 1px solid #dadada;
     }
     // .header__row
     &__row {
@@ -25,8 +25,8 @@
         }
         // .header__column_actions
         &_actions {
-            display: flex;
             margin-left: auto;
+            display: flex;
             column-gap: 15px;
         }
     }
@@ -34,12 +34,13 @@
     &__logo {
         // .header__logo_desktop
         &_desktop {
-            img {
-                // width: 100px;
-            }
+            // img {
+            //     // width: 100px;
+            // }
         }
         // .header__logo_mobile
         &_mobile {
+            display: none;
         }
     }
 }
@@ -65,23 +66,47 @@
         width: 45px;
         height: 45px;
         border-radius: 50%;
-        background-color: #33333356;
+        background-color: #e5e5e5;
         transition: all 0.3s ease 0s;
         &:hover {
             background-color: #33333330;
+        }
+        &._isLoggedIn {
+            border-radius: 25px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 160px;
+            padding: 0 15px;
+            column-gap: 7px;
+            overflow: hidden;
+
+            .user-logo {
+                * {
+                    fill: #ff8b0a;
+                    stroke: none;
+                }
+            }
+        }
+        .user-name {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+
+            color: #868686;
         }
     }
     // .header-action_cart
     &_cart {
         width: 165px;
-        background-color: #ff8b0a;
+        background: #ff8b0a;
         padding: 0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 25px;
 
-        font-family: "Nunito";
         font-weight: 600;
         font-size: 16px;
         line-height: 22px;
@@ -90,6 +115,71 @@
         transition: all 0.3s ease 0s;
         &:hover {
             background-color: #ff8d0ad6;
+        }
+
+        .product-quantity {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .header__row {
+        column-gap: 0;
+    }
+    .header__column_actions {
+        margin-left: 0;
+    }
+
+    .header__column_info {
+        margin: 0 auto;
+        // display: none;
+    }
+    .header-action_cart {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 0;
+        bottom: 55px;
+        right: 25px;
+        background: url("../../icons/cart.png") no-repeat center, #ff8b0a;
+        .product-quantity {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+
+            top: -7px;
+            right: -2px;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            font-size: 12px;
+            background: #ff8b0a;
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .header__column_info {
+        display: none;
+    }
+    .header__column_actions {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .header__logo {
+        &_desktop {
+            display: none;
+        }
+        &_mobile {
+            display: block;
         }
     }
 }

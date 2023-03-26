@@ -6,7 +6,7 @@ import { getProducts, loadProductList } from "../../store/products";
 import ProductSlider from "../productSlider/productSlider";
 const Pizza = () => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
         triggerOnce: true
     });
     const category = "pizza";
@@ -14,7 +14,7 @@ const Pizza = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (inView) {
+        if (inView && !pizza) {
             dispatch(loadProductList(category));
         }
     }, [inView]);

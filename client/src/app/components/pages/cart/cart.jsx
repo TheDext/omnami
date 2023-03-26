@@ -45,7 +45,9 @@ const Cart = () => {
                     <div className="cart__title _title">Корзина</div>
                     <div className="cart__body _box">
                         <div className="_small-title">
-                            Товаров в корзине ({products.length})
+                            {products.length === 0
+                                ? "Корзина пуста... :("
+                                : `Товаров в корзине (${products.length})`}
                         </div>
                         <div className="cart__products products-cart">
                             {products.map((product) => (
@@ -68,14 +70,17 @@ const Cart = () => {
                     </div>
                     <div className="order-price">
                         Сумма заказа:{" "}
-                        <span className="order-price__num">
+                        <span className="order-price__sum">
                             {sumСalculation(products)} ₽
                         </span>
                     </div>
                     <div className="cart-buttons">
-                        <button className="cart-buttons__btn cart-buttons__btn_back">
+                        <NavLink
+                            to="/"
+                            className="cart-buttons__btn cart-buttons__btn_back"
+                        >
                             Вернуться в меню
-                        </button>
+                        </NavLink>
                         <NavLink
                             to="/ordering"
                             disabled={isEmpty}

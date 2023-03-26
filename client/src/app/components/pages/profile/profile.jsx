@@ -1,53 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import Orders from "./userData/orders/orders";
-import UserData from "./userData/userData";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { NavLink, useNavigate } from "react-router-dom";
+import MainLayout from "../../../layouts/mainLayout";
+import { logOut } from "../../../store/users";
 import Bonuses from "./bonuses";
 import "./profile.scss";
-import { useDispatch, useSelector } from "react-redux";
-import {
-    getCurrentUserData,
-    getUsersLoadingStatus,
-    // loadUserData,
-    updateUser
-} from "../../../store/users";
-import MainLayout from "../../../layouts/mainLayout";
+import Orders from "./userData/orders/orders";
+import UserData from "./userData/userData";
+import { ReactComponent as Logout } from "../../../icons/logout.svg";
+import { resetOrdersList } from "../../../store/orders";
 
 const Profile = () => {
-    const [switchActive, setSwitchActive] = useState("profile");
     const dispatch = useDispatch();
-    const isLoading = useSelector(getUsersLoadingStatus());
-    const [data, setData] = useState({
-        name: "",
-        tel: "",
-        email: "",
-        street: "",
-        house: "",
-        entrance: "",
-        apartment: ""
-    });
-
-    const userData = useSelector(getCurrentUserData());
-
-    // useEffect(() => {
-    //     dispatch(loadUserData());
-    // }, []);
-
-    useEffect(() => {
-        if (!isLoading) {
-            setData((prevState) => ({ ...prevState, ...userData }));
-        }
-    }, [isLoading]);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        dispatch(updateUser(data));
-    };
-    const handleChange = (target) => {
-        setData((prevState) => ({
-            ...prevState,
-            [target.name]: target.value
-        }));
+    const navigate = useNavigate();
+    const [switchActive, setSwitchActive] = useState("profile");
+    const handleLogout = () => {
+        dispatch(logOut());
+        dispatch(resetOrdersList());
+        navigate("/");
     };
     return (
         <MainLayout>
@@ -64,9 +34,15 @@ const Profile = () => {
                     </NavLink>
                 </nav>
                 <div className="profile">
-                    <h1 className="profile__title _title">Личный кабинет</h1>
+                    <h1 className="profile__title">
+                        <span className="_title">Личный кабинет</span>
+                        <Logout
+                            onClick={handleLogout}
+                            className="profile__logout"
+                        />
+                    </h1>
                     <div className="profile__body">
-                        <div className="profile__switch switch-profile _box">
+                        <div className="profile__body-item profile__switch switch-profile _box">
                             <div
                                 className={`switch-profile__title switch-profile__title_profile ${
                                     switchActive === "profile" ? "_active" : ""
@@ -92,13 +68,9 @@ const Profile = () => {
                                 Бонусы
                             </div>
                         </div>
-                        <div className="profile__content content-profile _box">
+                        <div className="profile__body-item profile__content content-profile _box">
                             {switchActive === "profile" ? (
-                                <UserData
-                                    onSubmit={handleSubmit}
-                                    onChange={handleChange}
-                                    data={data}
-                                />
+                                <UserData />
                             ) : switchActive === "orders" ? (
                                 <Orders />
                             ) : (

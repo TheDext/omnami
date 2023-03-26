@@ -47,8 +47,7 @@ const { productRequest, productReceive, productRequestFaied } = actions;
 //     return false;
 // };
 
-export const loadProductList = (category) => async (dispatch, getState) => {
-    // if (isExpired(getState().products.lastFetch)) {
+export const loadProductList = (category) => async (dispatch) => {
     dispatch(productRequest());
     try {
         const { content } = await productService.fetchAll(category);
@@ -56,7 +55,6 @@ export const loadProductList = (category) => async (dispatch, getState) => {
     } catch (error) {
         dispatch(productRequestFaied(error.message));
     }
-    // }
 };
 
 export const getProducts = (category) => (state) =>

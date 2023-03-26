@@ -1,28 +1,38 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import img from "../../images/sliders/combo/01.png";
+// import img from "../../images/sliders/combo/01.png";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, getProductsCart } from "../../store/cart";
 import localStorageService from "../../services/localStorage.service";
 import "./productCard.scss";
 import { useNavigate } from "react-router-dom";
 
-const ProductCard = ({ id, name, weight, composition, price }) => {
+const ProductCard = ({ id, name, weight, composition, price, img }) => {
     const dispatch = useDispatch();
-    const products = useSelector(getProductsCart());
     const navigate = useNavigate();
-
+    const products = useSelector(getProductsCart());
     useEffect(() => {
         localStorageService.setCart(products);
     }, [products]);
 
-    const handleCardClick = () => {
+    const handleCardClick = (e) => {
         navigate(`/product/${id}`);
+        e.stopPropagation();
     };
 
     const handleAddToCartClick = (e) => {
+        const successText = "Добавлено";
+        const defaultText = "В корзину";
+
         e.stopPropagation();
-        dispatch(addToCart({ id, name, composition, price }));
+        dispatch(addToCart({ id, name, composition, price, img }));
+
+        e.target.setAttribute("disabled", true);
+        e.target.textContent = successText;
+        setTimeout(() => {
+            e.target.removeAttribute("disabled");
+            e.target.textContent = defaultText;
+        }, 800);
     };
 
     return (
@@ -54,6 +64,7 @@ ProductCard.propTypes = {
     name: PropTypes.string,
     weight: PropTypes.string,
     composition: PropTypes.string,
-    price: PropTypes.number
+    price: PropTypes.number,
+    img: PropTypes.string
 };
 export default ProductCard;

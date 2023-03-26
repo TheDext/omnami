@@ -21,6 +21,21 @@
     &__content {
         flex: 0 1 100%;
     }
+    // .profile__logout
+    &__logout {
+        margin-left: 20px;
+        max-width: 25px;
+        transform: translate(0, 2px);
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            * {
+                fill: red;
+                stroke: red;
+            }
+        }
+    }
 }
 
 .switch-profile {
@@ -39,5 +54,15 @@
         &._active {
             @extend %smallTitle;
         }
+    }
+}
+
+@media (max-width: $tablet) {
+    .profile__body {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .profile__body-item {
+        flex: 0 1 100%;
     }
 }

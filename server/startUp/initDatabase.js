@@ -1,5 +1,6 @@
 const Product = require("../models/Product");
 const Category = require("../models/Category");
+const Comment = require("../models/Comment");
 
 const categoriesMock = require("../mock/categories.json");
 const productsMock = [
@@ -8,14 +9,17 @@ const productsMock = [
   ...require("../mock/rolls.json"),
   ...require("../mock/sets.json"),
   ...require("../mock/snacks.json"),
+  ...require("../mock/additionally.json"),
 ];
 
 module.exports = async () => {
   const products = await Product.find();
   const categories = await Category.find();
+
   if (categories.length !== categoriesMock.length) {
     await createCategory(Category, categoriesMock);
   }
+
   if (products.length !== productsMock.length) {
     await createProducts(Product, productsMock);
   }

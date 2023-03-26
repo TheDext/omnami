@@ -6,7 +6,7 @@ import ProductSlider from "../productSlider/productSlider";
 import { useInView } from "react-intersection-observer";
 const Sets = () => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
         triggerOnce: true
     });
     const category = "sets";
@@ -14,8 +14,7 @@ const Sets = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (inView) {
-            console.log("+");
+        if (inView && !sets) {
             dispatch(loadProductList(category));
         }
     }, [inView]);

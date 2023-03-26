@@ -12,20 +12,20 @@ http.interceptors.request.use(
     async function (config) {
         const expiresDate = localStorageService.getTokenExpiresDate();
         const refreshToken = localStorageService.getRefreshToken();
-        const insExpired = refreshToken && expiresDate < Date.now();
+        const isExpired = refreshToken && expiresDate < Date.now();
 
         if (configFile.isFireBase) {
             const containSlash = /\/$/gi.test(config.url);
             config.url =
                 (containSlash ? config.url.slice(0, -1) : config.url) + ".json";
 
-            if (insExpired) {
+            if (isExpired) {
                 const data = await authService.refresh();
 
                 localStorageService.setTokens({
                     refreshToken: data.refresh_token,
                     idToken: data.id_token,
-                    expiresIn: data.expires_id,
+                    expiresIn: data.expires_in,
                     localId: data.user_id
                 });
             }
@@ -34,10 +34,14 @@ http.interceptors.request.use(
                 config.params = { ...config.params, auth: accessToken };
             }
         } else {
-            if (insExpired) {
+            if (isExpired) {
                 const data = await authService.refresh();
-
-                localStorageService.setTokens(data);
+                localStorageService.setTokens({
+                    refreshToken: data.refreshToken,
+                    accessToken: data.accessToken,
+                    expiresIn: data.expiresIn,
+                    userId: data.userId
+                });
             }
             const accessToken = localStorageService.getAccessToken();
             if (accessToken) {

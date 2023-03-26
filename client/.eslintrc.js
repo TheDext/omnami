@@ -27,6 +27,8 @@ module.exports = {
                 allowTemplateLiterals: true,
                 avoidEscape: true
             }
-        ]
+        ],
+
+        // "react/display-name": ["enabled", { "ignoreTranspilerName": true, "checkContextObjects": true }]
     }
 };

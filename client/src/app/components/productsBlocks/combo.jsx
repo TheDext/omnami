@@ -7,7 +7,7 @@ import ProductSlider from "../productSlider/productSlider";
 import "./productBlock.scss";
 const Combo = () => {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
         triggerOnce: true
     });
     const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Combo = () => {
     const combo = useSelector(getProducts(category));
 
     useEffect(() => {
-        if (inView) {
+        if (inView && !combo) {
             dispatch(loadProductList(category));
         }
     }, [inView]);

@@ -9,23 +9,33 @@ import ProductCard from "../productCard/productCard";
 const ProductSlider = ({ products }) => {
     return (
         <Swiper
-            spaceBetween={30}
-            // observer={true}
-            slidesPerView={4}
-            // onSlideChange={() => {
-            //     console.log("onSlideChange");
-            // }}
-            // onSliderFirstMove={() => {
-            //     console.log("onSliderFirstMove");
-            // }}
-            // onSwiper={(swiper) => console.log(swiper)}
             className={`product-slider ${!products ? "_disabled" : ""}`}
+            breakpoints={{
+                320: {
+                    centeredSlides: true,
+                    slidesPerView: 1.1,
+                    spaceBetween: 40
+                },
+                480: {
+                    centeredSlides: false,
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                }
+            }}
         >
             {!products
                 ? [...new Array(5)].map((_, i) => (
                       <SwiperSlide
                           key={`skeleton_${i}`}
-                          className="product-slider__slide"
+                          className="product-slider__slide _slide-preloader"
                       >
                           <Skeleton />
                       </SwiperSlide>
@@ -41,6 +51,7 @@ const ProductSlider = ({ products }) => {
                               weight={p.weight}
                               composition={p.composition}
                               price={p.price}
+                              img={p.img}
                           />
                       </SwiperSlide>
                   ))}

@@ -3,19 +3,15 @@
 @import "./styles/textField.scss";
 @import "./styles/variables.scss";
 @import "./styles/templates.scss";
+@import "./styles/mixins.scss";
 
-._container {
-    max-width: 1110px;
-    padding: 0 15px;
-    margin: 0 auto;
-    // z-index: 2;
-    // position: relative;
-}
 body {
     background: url("../app/images/bg.svg");
+    &._locked {
+        overflow: hidden;
+    }
 }
 .wrapper {
-    // background: url("../app/images/bg.svg");
     font-family: "Nunito";
     font-style: normal;
     font-weight: 400;
@@ -24,18 +20,27 @@ body {
     color: $textPrimary;
     position: relative;
     background-color: #ffffffe8;
-
-    // &::before {
-    //     content: "";
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
-    //     left: 0;
-    //     top: 0;
-    //     background-color: #fffffff4;
-    //     z-index: 0;
-    // }
+    padding-top: 160px;
 }
+._container {
+    max-width: #{$maxWidthContainer + px};
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+._main-layout-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #ffffff;
+}
+._main-layout-body {
+    // padding-top: 160px;
+    padding-bottom: 100px;
+}
+
 ._title {
     @extend %title;
 }
@@ -46,7 +51,7 @@ body {
     @extend %box;
 }
 ._product-block {
-    margin-top: 105px;
+    @include adaptiv-value("margin-top", 105, 50, 3);
     position: relative;
     z-index: 1;
 }

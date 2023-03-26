@@ -1,82 +1,92 @@
 [
-    {
-        "categoryName": "pizza",
-        "_id": "bnt84jT5N3pIvAz3wLTvL",
-        "name": "Четыре сыра",
-        "price": 437,
-        "composition": "Тесто, сливочный соус, моцарелла, сыры Гауда, Чеддер, Дорблю.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "BfrJzDBUgZyP8VcIZuR8A",
-        "name": "Пепперони",
-        "price": 555,
-        "composition": "Тесто, томатный соус, моцарелла, пепперони.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "uaeKltMyW9aQwRg0xTM3m",
-        "name": "Охотничья",
-        "price": 460,
-        "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, шампиньоны, перец болгарский, лук красный.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "pT9X7-sFTqg5soV5l4nCG",
-        "name": "Омнами",
-        "price": 435,
-        "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, лук красный, бекон, перец халапеньо, соус барбекю.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "g4FcD9HtWdkZXIcHnf_kE",
-        "name": "Мясная",
-        "price": 431,
-        "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, пепперони, ветчина, бекон.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "iHj6to7-hSSxVTBnTu7vE",
-        "name": "Маргарита",
-        "price": 437,
-        "composition": "Тесто, томатный соус, моцарелла, томаты.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "mK27GsLOhKsFjwTLK3mUv",
-        "name": "Жульен",
-        "price": 563,
-        "composition": "Тесто, сливочный соус, моцарелла, курица, шампиньоны жареные, сыр пармезан, петрушка.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "SQMSoJGUxqx5M3D0rhxb2",
-        "name": "Ветчина с грибами",
-        "price": 533,
-        "composition": "Тесто, томатный соус, моцарелла, шампиньоны, ветчина, томаты.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "mq_pLU7p36YRptuhDMu6s",
-        "name": "Вегетарианская",
-        "price": 593,
-        "composition": "Тесто, томатный соус, моцарелла, томаты, перец болгарский, лук красный, шампиньоны.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "pizza",
-        "_id": "UDBofNtzGKfAl1uKC_1Tu",
-        "name": "Мексиканская",
-        "price": 513,
-        "composition": "Тесто, сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
-        "weight": "450гр 150ккал / 100гр"
-    }
+  {
+    "categoryName": "pizza",
+    "_id": "bnt84jT5N3pIvAz3wLTvL",
+    "name": "Четыре сыра",
+    "price": 437,
+    "composition": "Тесто, сливочный соус, моцарелла, сыры Гауда, Чеддер, Дорблю.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1yKdQP4LliQsll1v-SOVvIiCg32W-dQn-UrX-kQHvPujaVYf1FCfzVgc339cRfkw2Wz26rPSt4dENUZlU7wJ5wVA_E9cqVKmVHHQIBCNhmE2ngmizprqLsW617O6lc4XWX6sYOYn25SPn7BvjFD53RV4JqzolcKAM4fbKnQ7mWOEH6aWr9maBT71OzVGxPuWbHyPn3BkqKqFXDA8tmMXhs3pzSnnq_4qTnG_8OkFqiBztR4vNSTWTE-JDdqQMlP3c8cM5HDt-MzImvDnCJPg4LrVEeLGopvANbvsCIovoIXTK7PMOQCXHoBr_zM758pzhV4WyGwelINnYnITcCrGiTcLLy2ZU6iArKleSaFVEjZG89sK2lX2pbDkaLW-OgLIY/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "BfrJzDBUgZyP8VcIZuR8A",
+    "name": "Пепперони",
+    "price": 555,
+    "composition": "Тесто, томатный соус, моцарелла, пепперони.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1VTZgX2QpOpGMkWg_goYt9ZkSpaOo6hrpZ3p1SP0ZIcBVKNldeVbLUPkCsvbwSw3Eq93cOq9c3uXIpCFiJVku3QyhS_7Y4SrF8ul7JiMQy7BkjfR8AiOQVC1dcfFW995xuUr3_ehyXP3u-mCF6YtuxriFuz9krpYg_yHLRzJ3b-KIcJzUhGNFtfg9JUTtg3jlHhWvERu_KfjpBvnDCM9CAcCM4M578K3ttrpx1lMp2Sb-np81TW4nfKvmZjiesHDJOXIkT3HULwm2yTxQ4KDC0aI-38V3vF_5u4ECTUHbY1CfSo5g2LBfs_Bk4dAf8hY0E8FkWMxyY5yqa7EG4jVnyS2u6DUkh8jJxDvtnn30iQqhmXKCPHlCenA32xYCqNB4/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "uaeKltMyW9aQwRg0xTM3m",
+    "name": "Охотничья",
+    "price": 460,
+    "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, шампиньоны, перец болгарский, лук красный.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2EuIW2itvSpAORdT6sKOrnM9TE8NPtskGdNgKswbrU2rJeZshbpN-iLhOrR2znMPfxcGNsJpfT3R4e0toMVUakyJWYB0xO9yvngi6P0vD3UlrqVc8cczjMiuAC6GRWT4vv9cgqZplNATVu0pjOPsJLUHFo12jHbRmVt7xxA-PtNTzmi4bHK5x0nhTb-02__Kk8ui3LSCXVoJBTv9Qf1hzGDwB4C3gDEUhK-vjEgTvgosTLsOcfQdJUhGUjJjvxGP-bMVzdNNkMwm7alKJAJ231UTeUWe_1bi72xcjFXktrEtQqJ4EtW2bTPIM1fW0HeAxq9R8Vt6hjDQpnh9GlLiCEOju0PdSbVyjSOBGzI9fXwTXaGX5AXjFU_TcmBim11Qk/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "pT9X7-sFTqg5soV5l4nCG",
+    "name": "Омнами",
+    "price": 435,
+    "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, лук красный, бекон, перец халапеньо, соус барбекю.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2miCc-3Kzzx3kJ6oJevMCEl58IqbTE04KDUNctu2bLC_DEEirHdsj_wt4b3DODus3r7ItVA5Lv8IRmxtdUkr9cplYeTzOFazkUXV1LcacO_pfxABlmUqiZzldWT8aZOhQKbEFsNjHNwAf1_Hq0s-lqiumeEu9P4uIuWjPyf9CKlPs87qhy5hzs26Wm-6ue1mEW50-qeGniUIIcAV2zCr2iHhB5gBbrFUB2oXgXR0nm-Bb2P9zrMAz9eZm1TUoytBGJSAqzyQjnbwCavdGLzz9d4MbGMXma44SSyJlJKBEUxgWwDdybKrni0upTi-q3_bMye8Yv3t38wyn8tLGhjgzrg26Lp5JxOJXF1n_ZfQbMxzNQiiN0sARw0igY8RUnvLc/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "g4FcD9HtWdkZXIcHnf_kE",
+    "name": "Мясная",
+    "price": 431,
+    "composition": "Тесто, томатный соус, моцарелла, колбаски охотничьи, пепперони, ветчина, бекон.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB36q9862w_3__t2oHvVIKWbTHgKy-z9Jg7Ldn7-pzs8kQngH-9U_Txxygh-fGFb86U3F89yxyGr7-8yIUHhA4oNBHBShwJu7BBH5xgVfUp99wLI6CNy5t21a28ZgBrofylE2yqQgcx934263ZzrjFmpm2qmZsVqoi9s_KPnIeVZLa6BlqwZO2Hpw9qNcCiYfOT8HiNFpT-xMYACMlvs_WvDeYXtrjPh028c4qxe6FM1aJa6z5aNxZFFxrKnEdQ0SRgFSbLEpYuNABsJg5MA_plutXd1ERKJXGj3Zu1fhquOFBbfmSdbGv8uPGzxBK_LE_RyBuirYQVGZxacwWthVRZ9p67QiwoZUKhnWJiR_hgWz9VoDnr0RlxvvzUYcjuFJxI/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "iHj6to7-hSSxVTBnTu7vE",
+    "name": "Маргарита",
+    "price": 437,
+    "composition": "Тесто, томатный соус, моцарелла, томаты.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3Ne9kBjTScKMoL0jKd2yygYgy0QXpUp32_j0L3WEjyTi2gnsyxrcsHpJcC4hC1tejBKxNLjA6R-xNE7N_TPIOSFNkZsyVJRpu5xZoIMN7GoFD6oZDd7K4LeO439ODTzblRlOGpxA5ApkeqRODIqV9at9u98ZuB6KWiMH-ptJxZc2JwlS_aECdIDStAkeNIOaVpdIyCNQ92qCzeoH4vjd-Tr_ii58f9xO_OvrqGZxobC0fwP1fZi1l0oRlWNbNDtCMLlQIBe3Axne6xkab6QAcmGowozwWbbYNMD89jeeT9QaP2Z4e0K94-eQZcmA4OWqd3TEyJACEq4SaX0G2C8obT1_y4LHctnzZgo7NBLH3MTLoY0eW4rA0fVjZBC9pve-s/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "mK27GsLOhKsFjwTLK3mUv",
+    "name": "Жульен",
+    "price": 563,
+    "composition": "Тесто, сливочный соус, моцарелла, курица, шампиньоны жареные, сыр пармезан, петрушка.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB0w00Pye-szvg1egs74DHsPW9bjnk22g9P5mtdkYU0gxEJvlvOV90lor0SG5JKc1wlsMetaen9GLlabH1VfanwSzURI7ZV2NDQwS3-Wl0u8zz8T5HUkj03DOc1ocB-jq5yBVxMNiW_O82iYZD_-KCkzZJAkgIxCZ_Kfbj57ccizAwUSBHqoExSRhOJZdVMzsmQBOFB2GHMICstezSpSGIP-sGYH6YwT2oStZV2_rQgJs86Fgyk4ra4AkVsPiDp_mSfGrTpMEzgMJsugOe1wmkHakOrTQ_tZWh0ILd65OjmF_u-ihSsZfmi_41x5WwsXRYlLfOAabBKApBP_LfjQEcpda8AI_tkvXleCB5rfjpNP3FcP-rjfAbs3tVZOHBGT0Z0/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "SQMSoJGUxqx5M3D0rhxb2",
+    "name": "Ветчина с грибами",
+    "price": 533,
+    "composition": "Тесто, томатный соус, моцарелла, шампиньоны, ветчина, томаты.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2q1s9rsntFIn9WjlHP5iGm1wUbMDy93O-yWrbJktoGpDKEt1mtlNEmPrtR7dQJHwS8ZdKYcVf0byyfkkjctuGmTt2ow5nIHaqe-6C19esIirKYbllk98jitHCVNXbdW5yX67xzmJxc3ErLM-47QWP-KYWpu5VWDZ_-DIAZnpk_RWaD2ksE0wQ2tpjpbDDpdhPvOVNNmuQX1OOh2FZS_UlkZrBfPy0bnayWWbkLLOBkZAPtmAKFkd7XJiyZVxa6Isfi4wFSgUs3kZl1F7LqMTbXjj-1lFHRQ8ZD8vaynUF28uuwfbayBJG-sWFKivj_ji7FszJ3AqhbJaFYBvbQKOh7MZArHlXm8vlXQMk1SzXO88Kbk7u4-oZK32pAVD-csRM/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "mq_pLU7p36YRptuhDMu6s",
+    "name": "Вегетарианская",
+    "price": 593,
+    "composition": "Тесто, томатный соус, моцарелла, томаты, перец болгарский, лук красный, шампиньоны.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2q1s9rsntFIn9WjlHP5iGm1wUbMDy93O-yWrbJktoGpDKEt1mtlNEmPrtR7dQJHwS8ZdKYcVf0byyfkkjctuGmTt2ow5nIHaqe-6C19esIirKYbllk98jitHCVNXbdW5yX67xzmJxc3ErLM-47QWP-KYWpu5VWDZ_-DIAZnpk_RWaD2ksE0wQ2tpjpbDDpdhPvOVNNmuQX1OOh2FZS_UlkZrBfPy0bnayWWbkLLOBkZAPtmAKFkd7XJiyZVxa6Isfi4wFSgUs3kZl1F7LqMTbXjj-1lFHRQ8ZD8vaynUF28uuwfbayBJG-sWFKivj_ji7FszJ3AqhbJaFYBvbQKOh7MZArHlXm8vlXQMk1SzXO88Kbk7u4-oZK32pAVD-csRM/p.jpeg"
+  },
+  {
+    "categoryName": "pizza",
+    "_id": "UDBofNtzGKfAl1uKC_1Tu",
+    "name": "Мексиканская",
+    "price": 513,
+    "composition": "Тесто, сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB0uRNv5KZRcvLX9UygEmPhypTjMJENtFILHoWUQ0qnpC8H_yuTK3BXHG1rrJzlmcc3nYdZEI4-p3wfmQXzezqxC_m4es34yRRc00r166dnJSufnJ3kE36rdwRZi6SFIPpLiLjIq_99NT1bYlbOn6_kkP_A1jkkT5hqaf2FNQiPQ-gAmr3ZajQqZfFSwDI_EeZOm5KBYkwgHPpwAxgWBc8fbXVMfV2ipVwJKZpgnJI8eViY5YvjycC7HOZeKELMm7c7n56iNU1K0F_E1nC3fI0KrEb7TNjP6gjuVFyYCDojPouTbqU8vxcppl2h6EDJ60wlanhf7lihaZlYu5ZQ8oj1lj-A_bRe9xrnABQHXycGHde_jMnIu8vXGWVBXJ-QZ-gE/p.jpeg"
+  }
 ]

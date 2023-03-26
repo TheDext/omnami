@@ -1,3 +1,119 @@
+@import "../../../styles/templates.scss";
+@import "../../../styles/mixins.scss";
+
 .product-page {
-  padding: 50px 0;
+    padding: 70px 0;
+
+    ._box {
+        box-shadow: -3px 11px 6px rgba(154, 170, 207, 0.305);
+    }
+    // .product-page__conatiner
+    &__conatiner {
+    }
+    // .product-page__body
+    &__body {
+    }
+    // .product-page__row
+    &__row {
+        display: flex;
+        column-gap: 50px;
+    }
+    // .product-page__column
+    &__column {
+        display: flex;
+        flex: 0 1 50%;
+        // .product-page__column_product
+        &_product {
+            .product {
+                width: 100%;
+            }
+        }
+        // .product-page__column_add-comment
+        &_add-comment {
+        }
+    }
+    // .product-page__form
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        row-gap: 30px;
+        .textarea {
+            margin-top: 0;
+            &__text {
+                height: 150px;
+            }
+        }
+    }
+    // .product-page__from-title
+    &__form-title {
+        @include adaptiv-font(20, 17, 1);
+    }
+    // product-page__from-error
+    &__form-error {
+        margin: 5px 0 0 0;
+        color: red;
+    }
+    // product-page__form-submit
+    &__form-submit {
+        margin-top: auto;
+        @extend %orangeButton;
+        max-width: 155px;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 10px;
+    }
+    // .product-page__comments-list
+    &__comments-list {
+        margin-top: 50px;
+    }
+}
+
+.comment-product {
+    &:not(:first-child) {
+        margin-top: 30px;
+    }
+    // .comment-product__text
+    &__text {
+    }
+    // .comment-product__name
+    &__name {
+        margin-top: 15px;
+        color: #393939;
+        font-weight: 700;
+        font-size: 18px;
+    }
+    // .comment-product__date
+    &__date {
+        margin-top: 10px;
+    }
+    // comment-product__remove
+    &__remove {
+        text-align: right;
+
+        // comment-product__remove-btn
+        &-btn {
+            cursor: pointer;
+            &:hover {
+                * {
+                    fill: $redHover;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .product-page {
+        &__row {
+            flex-wrap: wrap;
+            column-gap: 0;
+            row-gap: 15px;
+        }
+        &__column {
+            flex: 0 1 100%;
+        }
+    }
 }

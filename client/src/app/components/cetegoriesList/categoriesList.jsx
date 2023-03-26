@@ -1,34 +1,38 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./categoriesList.scss";
+import PropTypes from "prop-types";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/scss";
+import getCategories from "../../utils/getCategories";
 
-const CategoriesList = () => (
-    <ul className="categories-list _container">
-        <li className="categories-list__item">
-            <NavLink to="/pizza" className="categories-list__link">Пицца</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink to="/rolls" className="categories-list__link">Роллы</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink to="/sets" className="categories-list__link">Сеты</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink to="/combo" className="categories-list__link">Комбо</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink to="/snacks" className="categories-list__link">Закуски</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink className="categories-list__link">Wok-лапша</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink className="categories-list__link">Напитки</NavLink>
-        </li>
-        <li className="categories-list__item">
-            <NavLink className="categories-list__link categories-list__link_promotion">Акции</NavLink>
-        </li>
-    </ul>
-);
+const CategoriesList = ({ isHide }) => {
+    const categories = getCategories();
+    return (
+        <div
+            className={`categories-list _container ${isHide ? "_isHide" : ""}`}
+        >
+            <Swiper spaceBetween={30} slidesPerView="auto">
+                {categories.map(({ path, elem }, index) => (
+                    <SwiperSlide
+                        className="categories-list__item"
+                        key={`key_${index}`}
+                    >
+                        <NavLink
+                            className="categories-list__link"
+                            to={`/${path}`}
+                        >
+                            {elem}
+                        </NavLink>
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        </div>
+    );
+};
+
+CategoriesList.propTypes = {
+    isHide: PropTypes.bool
+};
 
 export default CategoriesList;

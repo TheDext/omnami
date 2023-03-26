@@ -1,5 +1,4 @@
 function generateAuthErrors(message) {
-  console.log(message);
     switch (message) {
         case "EMAIL_NOT_FOUND":
             return "Проверьте правильность вашего Email";

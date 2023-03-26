@@ -4,7 +4,7 @@ $orangeDisabled: #ffae52c6;
 
 $red: #ff5358;
 $redHover: #ff4b50;
-$redDisabled: #ff777b;
+$redDisabled: #ff777c9e;
 
 $grey: #cccccc;
 $greyHover: #c0c0c0;
@@ -15,3 +15,10 @@ $textSecondary: #888888;
 
 $title: #393939;
 
+$maxWidthContainer: 1110;
+$maxWidth: 1080;
+
+//--- брейк-поинты
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S

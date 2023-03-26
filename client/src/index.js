@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 // import './index.css';
 import App from "./app/App";
 import { createStore } from "./app/store/createStore";
+import "overlayscrollbars/overlayscrollbars.css";
 // import reportWebVitals from './reportWebVitals';
 
 const store = createStore();

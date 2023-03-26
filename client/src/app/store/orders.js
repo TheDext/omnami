@@ -31,6 +31,9 @@ const orderSlice = createSlice({
         orderCreateFailed: (state, action) => {
             state.errors = action.payload;
             state.isLoading = false;
+        },
+        ordersListReset: (state) => {
+            state.entities = [];
         }
     }
 });
@@ -42,14 +45,14 @@ const {
     orderLoadFailed,
     orderCreate,
     orderCreateSuccess,
-    orderCreateFailed
+    orderCreateFailed,
+    ordersListReset
 } = actions;
 
 export const submitOrder = (payload) => async (dispatch, getState) => {
     dispatch(orderCreate());
     try {
         const { content } = await orderService.create(payload);
-        console.log("submitOrder_content", content);
         if (getState().users.isLoggedIn) {
             dispatch(orderCreateSuccess(content));
             localStorage.setItem(
@@ -57,6 +60,7 @@ export const submitOrder = (payload) => async (dispatch, getState) => {
                 JSON.stringify(getState().orders.entities)
             );
         }
+        return content;
     } catch (error) {
         dispatch(orderCreateFailed(error.message));
     }
@@ -71,7 +75,6 @@ export const loadOrdersByUserId = (userId) => async (dispatch, getState) => {
                 getState().orders.entities.length
         ) {
             const { content } = await orderService.get(userId);
-            console.log("getOrdersByUserId_content", content);
             dispatch(orderLoaded(content));
             if (Object.keys(content).length) {
                 localStorage.setItem("orders", JSON.stringify(content));
@@ -81,7 +84,10 @@ export const loadOrdersByUserId = (userId) => async (dispatch, getState) => {
         dispatch(orderLoadFailed(error.message));
     }
 };
-
+export const resetOrdersList = () => (dispatch) => {
+    dispatch(ordersListReset());
+    localStorage.removeItem("orders");
+};
 export const getUserOrders = () => (state) => state.orders.entities;
 
 export default orderReducer;

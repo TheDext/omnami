@@ -1,27 +1,35 @@
 import React, { useState } from "react";
 import "./header.scss";
-import logoMob from "../../images/icons/logoDesktop.png";
+import logoDesktop from "../../icons/logoDesktop.png";
+import logoMob from "../../icons/logoMobile.png";
 import { NavLink } from "react-router-dom";
 import AuthLayout from "../../layouts/authLayout/authLayout";
 import { useSelector } from "react-redux";
-import { getIsLoggedIn } from "../../store/users";
+import { getIsLoggedIn, getUserName } from "../../store/users";
+import { ReactComponent as UserLogo } from "../../icons/user.svg";
+import MobileMenu from "./mobileMenu/mobileMenu";
+import PropTypes from "prop-types";
+import { getProductsCart } from "../../store/cart";
 
 const Header = () => {
     const isLogged = useSelector(getIsLoggedIn());
-    // console.log("isLogged", isLogged);
+    const userName = useSelector(getUserName());
     const [authModalActive, setAuthModalActive] = useState(false);
+    const productQuantity = useSelector(getProductsCart());
     return (
         <>
             <div className="header">
                 <div className="header__container _container">
                     <div className="header__row">
                         <div className="header__column header__column_logo">
-                            <NavLink to="/" disabled={true}>
+                            <NavLink to="/">
                                 <div className="header__logo header__logo_desktop">
+                                    <img src={logoDesktop} alt="" />
+                                </div>
+                                <div className="header__logo header__logo_mobile">
                                     <img src={logoMob} alt="" />
                                 </div>
                             </NavLink>
-                            <div className="header__logo header__logo_mobile"></div>
                         </div>
                         <div className="header__column header__column_info">
                             <div className="header-info">
@@ -47,9 +55,14 @@ const Header = () => {
                         <div className="header__column header__column_actions">
                             {isLogged ? (
                                 <NavLink
-                                    className="header-action header-action_login"
+                                    className="header-action header-action_login _isLoggedIn"
                                     to="/profile"
-                                ></NavLink>
+                                >
+                                    <UserLogo className="user-logo" />
+                                    <span className="user-name">
+                                        {userName}
+                                    </span>
+                                </NavLink>
                             ) : (
                                 <button
                                     className="header-action header-action_login"
@@ -58,15 +71,23 @@ const Header = () => {
                                             (prevState) => !prevState
                                         );
                                     }}
-                                ></button>
+                                >
+                                    <UserLogo />
+                                </button>
                             )}
                             <NavLink
                                 to="/cart"
                                 className="header-action header-action_cart"
                             >
+                                <span className="product-quantity">
+                                    {productQuantity
+                                        ? productQuantity.length
+                                        : 0}
+                                </span>
                                 Корзина
                             </NavLink>
                         </div>
+                        <MobileMenu />
                     </div>
                 </div>
             </div>
@@ -76,6 +97,10 @@ const Header = () => {
             />
         </>
     );
+};
+
+Header.propTypes = {
+    isMobile: PropTypes.bool
 };
 
 export default Header;

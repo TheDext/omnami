@@ -1,0 +1,65 @@
+[
+  {
+    "categoryName": "additionally",
+    "_id": "75z_2-1-qreh5zues-2yq",
+    "name": "Соус соевый",
+    "price": 20,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB1pWXDngewqANpuP9St2EGnNVw3irFEmoO42fTpux04TC74-tU5kjVuBvKGBjZqdsu_mWCGlqEZXr5vcSPjOspkj1xxc7i3-EaeCm01ul8iosCh7zckcNS7nga6I0mkH1y6MfZU72NhIp4Z8fZKmtYk-pfZokDcz6ho57W4nXWuRy-GHLFURBWMBXu1-cmd_OXLpJUx9PWCap30roVDsao3rRJdRrjg0WcpPeKCCgqHOGW4tPZlLwAoS_PO71ert8FiZ_Hvtq2x0tioyb2b76nqQxMlrzd5tCNZSufyoGmtQqDszsSN4mz9muwDkDUoSrWLSM7VPma8zI6R1_-xwHDb0gFmGYRUS0X7tXlHLA_byFmkdAJzk-aFg1MSoIndTF4/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "75z_2-1-1r3hwzees-2yq",
+    "name": "Васаби",
+    "price": 10,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB2hccvlcM3qFCPiINSnijkK3KZh8blxLpOf4NByPPaxN2aMiRLf8Dmk0vEs4kmZRIXuu0BFnlQvbvpP2ACO1PhoEg1TM7CeYdVwl0CvDBWMn-ghU4LNPoin9Ukin1qxO0_JIUGgB_O0IZUmwVpa69CcMg8mRgRDdMbgfzeMYIdjaJPA3GZd09rDuYjmdsVe8p6B--JWGzlgoT-jnZ3w__P0tNNWXMwwFmvI-L9_VAODXrJ6_CXdfSmp5JI8PKSVT81m9bXWbpG_H64akL-uNDAIVR5NNybCDX-2ZtC7jqK8gc5wX1-V4uO09Goj8opALl9OZU_zDtTffPl1pFnNVAQTtzdFb_hAji_KB0mLiig0f9u9C9-af3knk5c79PH_-xk/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "75z_2-1-123hwWeGs-6yq",
+    "name": "Имбирь",
+    "price": 25,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB1RMYFf6u-fkuYVVIgivnQZIYMzFB-yA_ztI8aD4vPF6P1Lh7O1V9Jyqueu7-wiigjUl7T-EkLjhGaPcCUXEnTdVZjflnh8D-LjL2lFogU3fhUfC9zQLlsE6kAew0rGE4MmYmPAd2h20-hNCYGK32AfH8-MUxw-oDvHSnG7dm0NX4Cbb8a4VsLkqJdGfjBx7x0e7NCnL7-sSpaHorPJ86y3w7LXiG46-MiwON6pBDdSu32Jc9bfHAdY5EVnmLaMJazx8y2rskK_PzRecdSXDuDL9UTf2A1azin3HoF8DNCIGoGwHF3_hLmS5HTmEnhQWU91m3TPzhG20VahTqQWD_MtgnMXuRy-gqIzktdYdPwsZLkHdVLjGJOZZx-jIB2OWQ0/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "75z_2-1-1p2dwqnGH-6yq",
+    "name": "Соус кисло-сладкий",
+    "price": 25,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB2S-cOTT03prX5BmljU0w1VrsNohYW4tQ9cDGmoAT90TdmS4-WI3RuPnIDfy_1ZdXDrpjopr9sOFwGBnx0Z6hQ66f0ZZOhcKTrW35lL5_poaq7Es8-i4JU9xZm_98NbgAGFt2Tli5o0HrkQIvjpjVLM7-ynxwOoWmf54jZB-NtdD840Vl4VBbtyCvopwlqdcj8usJ2jUhvkbM4EelzKwKDt2zwx5r4EofUFoaGE9j2bAxxGBbWXAZ2Jbsj4Z0-kY10GTsk4IV1nVckWKT5GnmuLMedv8k9HhdpU-6CZA4hk6kQE52THN0W7H_-6fq4eAQGKf18_87P3H-Qmjaezx9h1rRZzlpaBk_vdev6FCJHf2ZXQ37mdoNClQ1H7OOvD5PY/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "75z_1s-1-1p2qwqnGw-6yq",
+    "name": "Соус сырный",
+    "price": 25,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB1ABWEyLHzvHQciSTaIchLWl_jg1H7VwYVtA58M0vbLtUnohX5iEfipHvFSGonqCqv216ENbD5Cybj7JqEk9f57UJemiK-k17HWuZl1dvAIq_KTN9XvFCoKODHuBKXKkUN7PAsDpKuIV2buyj-BDl9vYH9Zs2FYetFVR5-BSxicWXts-UA0kBGDAlMDtpyBKkMxDH7q_RIwy1FbC3QDq_LsnePhuDvAIPsUreLOH3CcCj7eKpVOoD3bU9b1MRdVStzKbC0SawideinC2Otvu_t0FB947g4M8NkV2-1VcNWGLajctdESyyOBIEq556xNu7FLUEaezkEgg1UDzeKlc0_-9pIPN-czMF2WKMhnf1X9buAaLABvBUnMLahdsKmmgjc/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "751_2s-5-1p2qanz-6ycq",
+    "name": "Соус спайси",
+    "price": 25,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB3Tkgiicj_NB4zclvMo0cCGaw1-kGtCQzkD_N2_XUiBylq_WkrP7x_w8l_wTZB5yS5VVmrba5OHO_ooWjfxx2FfnHss0TNEgIeTG2pfYu9Wz-hgS3pZgu_lvJpIlUCW_2V3Y2bukwd4RtHdmT7UESWeLKnQmmmUlCZYwoxdkSpKf3-oXf3yAyET25JhcD4dUgtoaQwOhGIRsvb6t4ReNzu50KJG0g4wlXMxHrnczivsCA35jm8DC6r3bPdBmdSAghkbQZQCTAPFHvDLadGPjBvvTWXB_1RyNo1WXDSaoXm2verExMTLJHMaGP5G1bS53Ic6sAEk__I5nJv1-wUUjPORn4fftFdLbEN_RaMc8fMF9X4RCGyOiU0pdA6Rj_RtXc0/p.jpeg"
+  },
+  {
+    "categoryName": "additionally",
+    "_id": "751_2s-5-1p2qanz-6ycq",
+    "name": "Томатный кетчуп",
+    "price": 25,
+    "composition": "",
+    "weight": "",
+    "img": "https://previews.dropbox.com/p/thumb/AB1ylgCFHh-zxAtuYjLD1_rZlkKJja5XOrnJZ7ifYIWeW8j0HQ0fQ0b5c4XwxnqJeR2vKsJCS5ydwTS_vGsE4xcFkwtd68Hefhi4_22RkmT04-mTqR5Q9X3CMvcOdQrDm81uKEE8hH4Bd2rV_EdOuoCM8axeVrq8X4Ht5SRmegkzSyur1HLnKfuLoxkcZxorcy_2AcHciSN9ETwdKOEXvYSP71eOkVNqg_0na4mGNV68bYimztpeTq02B2aGFafHkqBIwIBmr1GZ215cUQUEdmuLvxKpJkC_l74iVcWgxS9k965CzjTmLgXJ38a5dZ6IEmUcB4APKxXoHBr-L_f8N7ghGVXh5dHGFM0WCPC95ZR4Ny9VKa2avLrEBvr909Rvi_E/p.jpeg"
+  }
+]

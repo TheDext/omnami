@@ -25,10 +25,10 @@ router.get("/:userId", auth, async (req, res) => {
     const { userId } = req.params;
 
     if (userId === req.user._id) {
-      const updatedUser = await User.findByIdAndUpdate(userId, req.body, {
+      const userData = await User.findByIdAndUpdate(userId, req.body, {
         new: true,
       });
-      res.send(updatedUser);
+      res.send(userData);
     } else {
       res.status(401).json({ message: "Unauthorize" });
     }
@@ -38,16 +38,5 @@ router.get("/:userId", auth, async (req, res) => {
     });
   }
 });
-
-// router.get("/", auth, async (req, res) => {
-//   try {
-//     const list = await User.find();
-//     res.send(list);
-//   } catch (error) {
-//     res.status(500).json({
-//       message: "На сервере произошла ошибка. Попробуйте позже",
-//     });
-//   }
-// });
 
 module.exports = router;

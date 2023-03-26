@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { login } from "../../store/users";
+import { getAuthErrors, login } from "../../store/users";
 import { validator } from "../../utils/validator";
-import TextField from "../textField";
+import TextField from "../form/textField";
 
 const LoginForm = () => {
     const [data, setData] = useState({
         email: "",
         password: ""
     });
-
+    const authErrors = useSelector(getAuthErrors());
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const [errors, setErrors] = useState({});
@@ -60,29 +60,33 @@ const LoginForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="auth-modal__form">
-            <TextField
-                label="Введите ваш Email"
-                name="email"
-                value={data.email}
-                error={errors.email}
-                onChange={handleChange}
-            />
-            <TextField
-                label="Введите ваш пароль"
-                name="password"
-                value={data.password}
-                error={errors.password}
-                onChange={handleChange}
-            />
-            <button
-                className="auth-modal__submit"
-                type="submit"
-                disabled={!isValid}
-            >
-                Авторизоваться
-            </button>
-        </form>
+        <>
+            {authErrors && <p className="auth-modal__error">Ошибка: {authErrors}</p>}
+            <form onSubmit={handleSubmit} className="auth-modal__form">
+                <TextField
+                    label="Введите ваш Email"
+                    name="email"
+                    value={data.email}
+                    error={errors.email}
+                    onChange={handleChange}
+                />
+                <TextField
+                    label="Введите ваш пароль"
+                    name="password"
+                    value={data.password}
+                    error={errors.password}
+                    onChange={handleChange}
+                    type="password"
+                />
+                <button
+                    className="auth-modal__submit"
+                    type="submit"
+                    disabled={!isValid}
+                >
+                    Авторизоваться
+                </button>
+            </form>
+        </>
     );
 };
 

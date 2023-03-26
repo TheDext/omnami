@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as CloseButton } from "../../images/icons/closeButton.svg";
+import { ReactComponent as CloseButton } from "../../icons/closeButton.svg";
 import PropTypes from "prop-types";
 import "./authLayout.scss";
 import LoginForm from "../../components/auth/loginForm";

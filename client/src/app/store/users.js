@@ -9,7 +9,6 @@ const initialState = localStorageService.getAccessToken()
           entities: null,
           isLoading: true,
           error: null,
-          auth: { userId: localStorageService.getUserId() },
           isLoggedIn: true,
           dataLoaded: false
       }
@@ -70,14 +69,11 @@ const {
     userRequestFailed,
     authRequestSuccess,
     authRequestFailed,
-    // userCreated,
     userLoggedOut,
     userUpdated
 } = actions;
 
 const authRequested = createAction("users/authRequested");
-// const userCreateRequested = createAction("users/userCreateRequested");
-// const createUserFailed = createAction("users/createUserFailed");
 const updateUserRequest = createAction("users/updateUserRequest");
 const updateUserFailed = createAction("users/updateUserFailed");
 
@@ -112,13 +108,6 @@ export const signUp =
             localStorageService.setTokens(data);
             dispatch(authRequestSuccess({ userId: data.userId }));
             redirect();
-            // dispatch(
-            //     createUser({
-            //         _id: data.localId,
-            //         email,
-            //         name
-            //     })
-            // );
         } catch (error) {
             dispatch(authRequestFailed(error.message));
         }
@@ -126,22 +115,9 @@ export const signUp =
 
 export const logOut = () => (dispatch) => {
     localStorageService.removeAuthData();
+    localStorageService.resetCart();
     dispatch(userLoggedOut());
-    history.push("/");
 };
-
-// function createUser(payload) {
-//     return async function (dispatch) {
-//         dispatch(userCreateRequested());
-//         try {
-//             const { content } = await userService.create(payload);
-//             dispatch(userCreated(content));
-//             history.push("/profile");
-//         } catch (error) {
-//             dispatch(createUserFailed(error.message));
-//         }
-//     };
-// }
 
 export function updateUser(payload) {
     return async function (dispatch) {
@@ -165,13 +141,7 @@ export const loadUserData = () => async (dispatch) => {
     }
 };
 
-// export const getUsersList = () => (state) => state.users.entities;
 export const getCurrentUserData = () => (state) => state.users.entities;
-// export const getCurrentUserData = () => (state) => {
-//     return state.users.entities
-//         ? state.users.entities.find((u) => u._id === state.users.auth.userId)
-//         : null;
-// };
 export const getUserInfo = (userId) => (state) => {
     if (state.users.entities) {
         return state.users.entities.find((u) => u._id === userId);
@@ -181,7 +151,9 @@ export const getUserInfo = (userId) => (state) => {
 export const getIsLoggedIn = () => (state) => state.users.isLoggedIn;
 export const getDataStatus = () => (state) => state.users.dataLoaded;
 export const getUsersLoadingStatus = () => (state) => state.users.isLoading;
-export const getCurrentUserId = () => (state) => state.users.auth.userId;
+export const getCurrentUserId = () => (state) => state.users.entities?._id;
 export const getAuthErrors = () => (state) => state.users.error;
 export const getOrdersList = () => (state) => state.users.entities.orders;
+export const getUserName = () => (state) => state.users.entities?.name;
+
 export default usersReducer;

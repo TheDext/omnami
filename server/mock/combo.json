@@ -5,7 +5,8 @@
     "categoryName": "combo",
     "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
     "price": 1100,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3VTGOnr2VJF1idM4MW-GrDn585ww7sRtPaA7rHstpdh1L4S0ZL1I5qVj2YDH4ueSwkDa0pGR3zCOTppf-iHZzcM-ovaqQVt6A9RircrZeJKP1BsnZu4J68fQAj34gPnSsSjdhHt0rh5mnevZDYSB52Lced7VcljEw03I6Xa_LkEMikI6WvZdWGhZJsRlQPh_SnFq0yMhgIJIwMlBN17BoeCnSHlLlj1L1myrdGGkrqHhLMdHBy_qXq0k1SWr_RHMQW8O3P6F7yvnGYbDd_li2tEfegghZ8zkitSPjwU1uzIS2o5o4fp93I1e9aMwtNJ2AjZ_UNZUuE6wx5xj2zIVnxKZOPlLaz-0tIXewTE01-AkpZgGvl5qKyP6oWKUF-Z50/p.jpeg"
   },
   {
     "_id": "3n74nAAez61YdYM1H19CY",
@@ -13,7 +14,8 @@
     "name": "Комбо 2",
     "composition": "Сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
     "price": 900,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1qN7a4uHZuO5ZsEqGtQ8zxJ6U8bS1LDsevnDcm62v5J66YGJ7wDyVEaY8o_54aXr91LLh13kAw4AvxWQ5DgTNbrEPBrq1sFizpY6OQvJd6GCFVskEKLOiuRGZ8Q9WNeT97miL4TYzWBXPnpm7CREa2tQjslePy13uws545d1JuXYSVSeIj_VVQsoWWwZklN-vfhVGp1IovHaVjKVK8pB4qpzhNsgbbpLb93UISM7mYb8bCG9jcmUEFxIDTj8zS8pwhL-uGnwCfJurAe6Mx7PbvCBmWrZq6Rjb7t3GvPYSYCMecdyydGONlP_WHbOBQNtcfMyaMSasvgLVbv-KLK4sLFZria532FThkg7tJ2vAR2_GD97YDhc6FkKu4Upw6QrI/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -21,7 +23,8 @@
     "name": "Комбо 3",
     "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
     "price": 800,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3OXI0cNKWJ0NtOZJPYZcR8-wFUDdMbc_BeuUrgzcBht9K4BhjDBfSBXLdfIlZsRXrrw3rP2dj98fbxf7tavnD2zy5e9U6brdHtmYOUhwZ-0BAzGXPRPPwUgM_q7OeMVfVGGuX3QeZeXRC9XZzaUCIqsCTi0XJZrne4hKAN_Hnge_mn37iLhM0JZjt_cWsGxZXeAeLJzFnoI3JL7j9az4mTd5AX6PVFPJLMuvNrkxavNsqw_vFQzpTU_-X181vBAwAck5zxt5mCdvmeouqLMY0fJ-K9WZcGWow5Apnr6oLgHoRCaCHBuDvkz6hdlNrdaqKh9p9sWTCyVQ2Q8l_LmbGXa0e6je9kETg4Sl_W7gJKRGDEzJlkI1MlDaDcgg3MFkw/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -29,7 +32,8 @@
     "name": "Комбо 4",
     "composition": "Курица, сыр моцарелла, ананасы, ветчина, кукуруза",
     "price": 1100,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1vli7qcty1BIylMcvQuIFE61jsMlFB4SNef6oPpZyWCtdiURjMUbS8egae_J3LbmLU31RJREYU2KRs5PxLxkDW1ttwUuemdh5ZRkAeUMHc95sfCdVkx4bnuDIshvZJ-88sSJHeyLF7pIMDAX-HISU9XDTEpQP20I2YYP6gGaRPx-lNtaBKI_-u33HbtnVUB7Y1d-laX04nqN0NGI-pUprwcOKirH1gc0YYppKHIZEspVePhNKnmg8A-PYfeh05IYIBkDMTLwSfYZ7z-AuJu-DThMfH5XAI6SK0cvEelhP9Vqszxmvpng-8Eh8V8H5PCaWcYKL5xRJSqyf7gyo7GORxmn0EjBXVGc-xl8DGbDCd4m4rEKg2AP4oPiqZp5qWGCAmzak95CkOgGFPj_FNhFKv/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -37,7 +41,8 @@
     "name": "Комбо 5",
     "composition": "Томатный соус, сыр моцарелла, болгарский перец, ветчина, помидоры",
     "price": 500,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB18XAtVpkFDgi-wsW_Vd_BC3DdmYLyIR6UefKdGGp80Z3H8YxnViFp6UjVoGfQz6jv7O9d1f7foLTIzlVcZ4cDc8mCF2Mtc78SjAFeK3c-Rfr2rduDfQ92HetfGiEPnn13sUPeqFWcfLvx4vbHiq2p14Mc2kDuZ_6ZamHNzVCZ6k2m_Owhdf4QIhDF4Tof9Tp4jqwpHhnqZjmuOUR_p4ejHb3ujwfC5KPGpbGZ4RWcvlChmh-eVdqc__9T_lGV4jQc2bCcvfQn1DwqyRV8obFcuJ-6SKfNeCJizEaBBQZCTqV2iTUtijX9XzxQoY0ttlgjj2irZyoD06DmPeilxAxwkIse2RxbLp3iwqhY9wmnYkkq0NBRqfyUgCxEkg5xR-2s/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -45,7 +50,8 @@
     "name": "Комбо 6",
     "composition": "Курица, сыр моцарелла, ананасы, ветчина, кукуруза",
     "price": 650,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2bIbpP9BukpVkxgq6cyLToVZnvt0spDV5UUYz23KoVeoqBKvUQfCkLVrJn7n3XjPCrsgS-kIPU7bV_RtAj5_4wNr4eNuUKsbC-91ibY-fQmtJ3wDieEOE--4wOaq-G-NogU9PjPiLeqTjqNQhRxuOvmiIxa3Ee8cKOo6e_Vx5cau7aGeW4WrFuLAgBD6XNIxP8h9WOMeRXdsfMeSmdbMAKmhEiIW1ExocCL-hyn6m96nglurPEExms9jDdGPalMyP7ae5hoOtNRxJdL3VjaYrArZppEHQYxcurLxR7JCNl6Y6aGCRyGVUikMTy3FuZviIAQpSeM_pqruFIv-WF-PzPp-W9koXEd8nxzM_Vtc4PEDxeF7I_hYKCmJvEvn5U-QU/p.jpeg"
   },
   {
     "_id": "Yoydc-ZMRiOJexu3SFCyzpjLk0e",
@@ -53,7 +59,8 @@
     "name": "Комбо 7",
     "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
     "price": 650,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1qN7a4uHZuO5ZsEqGtQ8zxJ6U8bS1LDsevnDcm62v5J66YGJ7wDyVEaY8o_54aXr91LLh13kAw4AvxWQ5DgTNbrEPBrq1sFizpY6OQvJd6GCFVskEKLOiuRGZ8Q9WNeT97miL4TYzWBXPnpm7CREa2tQjslePy13uws545d1JuXYSVSeIj_VVQsoWWwZklN-vfhVGp1IovHaVjKVK8pB4qpzhNsgbbpLb93UISM7mYb8bCG9jcmUEFxIDTj8zS8pwhL-uGnwCfJurAe6Mx7PbvCBmWrZq6Rjb7t3GvPYSYCMecdyydGONlP_WHbOBQNtcfMyaMSasvgLVbv-KLK4sLFZria532FThkg7tJ2vAR2_GD97YDhc6FkKu4Upw6QrI/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -61,7 +68,8 @@
     "name": "Комбо 8",
     "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
     "price": 830,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1qN7a4uHZuO5ZsEqGtQ8zxJ6U8bS1LDsevnDcm62v5J66YGJ7wDyVEaY8o_54aXr91LLh13kAw4AvxWQ5DgTNbrEPBrq1sFizpY6OQvJd6GCFVskEKLOiuRGZ8Q9WNeT97miL4TYzWBXPnpm7CREa2tQjslePy13uws545d1JuXYSVSeIj_VVQsoWWwZklN-vfhVGp1IovHaVjKVK8pB4qpzhNsgbbpLb93UISM7mYb8bCG9jcmUEFxIDTj8zS8pwhL-uGnwCfJurAe6Mx7PbvCBmWrZq6Rjb7t3GvPYSYCMecdyydGONlP_WHbOBQNtcfMyaMSasvgLVbv-KLK4sLFZria532FThkg7tJ2vAR2_GD97YDhc6FkKu4Upw6QrI/p.jpeg"
   },
   {
     "categoryName": "combo",
@@ -69,7 +77,8 @@
     "name": "Комбо 9",
     "composition": "Сладкий перец, соус Бургер, халапеньо, курица, кукуруза, томаты",
     "price": 1135,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3OXI0cNKWJ0NtOZJPYZcR8-wFUDdMbc_BeuUrgzcBht9K4BhjDBfSBXLdfIlZsRXrrw3rP2dj98fbxf7tavnD2zy5e9U6brdHtmYOUhwZ-0BAzGXPRPPwUgM_q7OeMVfVGGuX3QeZeXRC9XZzaUCIqsCTi0XJZrne4hKAN_Hnge_mn37iLhM0JZjt_cWsGxZXeAeLJzFnoI3JL7j9az4mTd5AX6PVFPJLMuvNrkxavNsqw_vFQzpTU_-X181vBAwAck5zxt5mCdvmeouqLMY0fJ-K9WZcGWow5Apnr6oLgHoRCaCHBuDvkz6hdlNrdaqKh9p9sWTCyVQ2Q8l_LmbGXa0e6je9kETg4Sl_W7gJKRGDEzJlkI1MlDaDcgg3MFkw/p.jpeg"
   },
   {
     "_id": "Yoydc-qOVBVj-M8S6woz20-1RIm",
@@ -77,6 +86,7 @@
     "name": "Комбо 10",
     "composition": "2 пиццы 33 см (на выбор), картофель фри или по-деревенски (на выбор)",
     "price": 450,
-    "weight": "450гр 150ккал / 100гр"
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1vli7qcty1BIylMcvQuIFE61jsMlFB4SNef6oPpZyWCtdiURjMUbS8egae_J3LbmLU31RJREYU2KRs5PxLxkDW1ttwUuemdh5ZRkAeUMHc95sfCdVkx4bnuDIshvZJ-88sSJHeyLF7pIMDAX-HISU9XDTEpQP20I2YYP6gGaRPx-lNtaBKI_-u33HbtnVUB7Y1d-laX04nqN0NGI-pUprwcOKirH1gc0YYppKHIZEspVePhNKnmg8A-PYfeh05IYIBkDMTLwSfYZ7z-AuJu-DThMfH5XAI6SK0cvEelhP9Vqszxmvpng-8Eh8V8H5PCaWcYKL5xRJSqyf7gyo7GORxmn0EjBXVGc-xl8DGbDCd4m4rEKg2AP4oPiqZp5qWGCAmzak95CkOgGFPj_FNhFKv/p.jpeg"
   }
 ]

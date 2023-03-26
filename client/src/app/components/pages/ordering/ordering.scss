@@ -2,7 +2,6 @@
 @import "../../../styles/templates.scss";
 
 .ordering {
-    margin-bottom: 120px;
     // .ordering__title
     &__title {
     }
@@ -15,6 +14,11 @@
     // .ordering__form
     &__form {
         flex: 0 1 100%;
+        transition: all 0.3s ease 0s;
+    }
+    &__form._sending {
+        opacity: 0.5;
+        pointer-events: none;
     }
     // .ordering__products
     &__products {
@@ -31,10 +35,15 @@
 }
 
 .products-ordering {
-    max-height: 350px;
+    // padding: 40px 5px 40px 30px;
+    max-height: 400px;
     // .products-ordering__body
     &__body {
         margin-top: 10px;
+        max-height: 250px;
+        overflow: auto;
+        margin-right: -20px;
+        padding-right: 20px;
     }
     // .products-ordering__bottom
     &__bottom {
@@ -61,25 +70,27 @@
     display: flex;
     align-items: center;
     padding: 25px 0;
+    column-gap: 10px;
     &:not(:last-child) {
         border-bottom: 1px solid #e9e9e9;
     }
     // .product-ordering__img
     &__img {
         img {
+            border-radius: 10px;
             max-width: 80px;
         }
     }
     // .product-ordering__info
     &__info {
-        margin-left: 10px;
+        // margin-left: 10px;
     }
     // .product-ordering__title
     &__title {
         color: $title;
         font-weight: 600;
         font-size: 18px;
-        line-height: 25px;
+        line-height: 20px;
     }
     // .product-ordering__counter
     &__counter {
@@ -88,6 +99,7 @@
     }
     // .product-ordering__price
     &__price {
+        white-space: nowrap;
         color: $title;
         font-weight: 400;
         font-size: 20px;
@@ -97,7 +109,7 @@
 }
 
 // .comment-ordering
-.comment-ordering {
+.textarea {
     margin-top: 30px;
     // .comment-ordering__label
     &__label {
@@ -108,7 +120,7 @@
         display: block;
     }
     // .comment-ordering__textarea
-    &__textarea {
+    &__text {
         display: block;
         background: #ffffff;
         color: #656565;
@@ -122,5 +134,22 @@
     }
     // .comment-ordering__error
     &__error {
+    }
+}
+
+@media (max-width: $tablet) {
+    .ordering__body {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        row-gap: 50px;
+        ._box {
+            flex: 0 1 100%;
+        }
+    }
+}
+@media (max-width: $mobileSmall) {
+    .ordering__submit {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

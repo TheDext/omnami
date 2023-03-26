@@ -1,23 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
-import img from "../../../images/ordering.jpg";
+import { NavLink, useNavigate } from "react-router-dom";
 import MainLayout from "../../../layouts/mainLayout";
-// import orderService from "../../../services/order.service";
 import { getProductsCart } from "../../../store/cart";
 import { getCurrentUserData, getIsLoggedIn } from "../../../store/users";
 import sumСalculation from "../../../utils/sumCalculation";
-import TextAreaField from "../../textAreaField";
 import DeliveryType from "./deliveryType/deliveryType";
 import localStorageService from "../../../services/localStorage.service";
 import "./ordering.scss";
 import { submitOrder } from "../../../store/orders";
+import { useScrollbar } from "../../../hooks/useScrollbar";
+import ThanksModal from "./thanksModal";
+import TextAreaField from "../../form/textAreaField";
 
 const Ordering = () => {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const currentUserData = useSelector(getCurrentUserData());
     const isLoggedIn = useSelector(getIsLoggedIn());
-    const [data, setData] = useState({
+    const productOrderingBody = useRef(null);
+    const initialState = {
         street: currentUserData?.street || "",
         house: currentUserData?.house || "",
         entrance: currentUserData?.entrance || "",
@@ -27,13 +29,22 @@ const Ordering = () => {
         date: "",
         time: "",
         comment: ""
-    });
+    };
+    const [showModal, setShowModal] = useState(false);
+    const [data, setData] = useState(initialState);
+    const cart = useSelector(getProductsCart());
+    useScrollbar(productOrderingBody);
+    useEffect(() => {
+        if (!cart.length) {
+            navigate("/");
+        }
+    }, []);
 
     const [errors, setErrors] = useState({});
-    const cart = useSelector(getProductsCart());
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        e.target.classList.add("_sending");
         const newData = {};
 
         for (const value in data) {
@@ -44,17 +55,21 @@ const Ordering = () => {
         if (isLoggedIn) {
             newData.userId = localStorageService.getUserId();
         }
-        dispatch(
+        const isSubmited = await dispatch(
             submitOrder({
                 ...newData,
                 cart
             })
         );
 
-        // await orderService.create({
-        //     ...newData,
-        //     cart
-        // });
+        if (isSubmited) {
+            setTimeout(() => {
+                setShowModal(true);
+                e.target.classList.remove("_sending");
+                setData(initialState);
+                localStorageService.resetCart();
+            }, 1000);
+        }
     };
 
     const handleChange = (target) => {
@@ -119,8 +134,11 @@ const Ordering = () => {
                             <div className="products-ordering__title _small-title">
                                 Ваш заказ
                             </div>
-                            <div className="products-ordering__body">
-                                {cart.map(({ id, count, name, price }) => (
+                            <div
+                                ref={productOrderingBody}
+                                className="products-ordering__body"
+                            >
+                                {cart.map(({ id, count, name, price, img }) => (
                                     <div
                                         key={id}
                                         className="products-ordering__product product-ordering"
@@ -154,6 +172,7 @@ const Ordering = () => {
                     </div>
                 </div>
             </div>
+            {showModal && <ThanksModal onChange={setShowModal} />}
         </MainLayout>
     );
 };

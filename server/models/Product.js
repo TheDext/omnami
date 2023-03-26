@@ -4,12 +4,13 @@ const schema = new Schema(
   {
     category: {
       type: Schema.Types.ObjectId,
-      ref: "Category"
+      ref: "Category",
     },
     name: String,
     price: Number,
     composition: String,
     weight: String,
+    img: String,
   },
   {
     timestamps: true,

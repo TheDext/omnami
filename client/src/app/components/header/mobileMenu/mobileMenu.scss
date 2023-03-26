@@ -1,0 +1,122 @@
+@import "../../../styles/variables.scss";
+.mobile-menu {
+    display: none;
+
+    @media (max-width: $tablet) {
+        display: block;
+        position: relative;
+        z-index: 10;
+        // .mobile-menu__burger
+        &__burger {
+            cursor: pointer;
+            margin-left: 25px;
+            width: 25px;
+            height: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+
+            &::before,
+            &::after,
+            span {
+                content: "";
+                height: 2px;
+                width: 100%;
+                left: 0;
+                background: #393939;
+                border-radius: 10px;
+                transition: all 0.3s ease 0s;
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+            span {
+                top: calc(50% - 1px);
+            }
+        }
+        // .mobile-menu__content
+        &__content {
+            position: fixed;
+            left: 0;
+            transform: translate(0, 30px);
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            pointer-events: none;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.3s ease 0s;
+        }
+        // .mobile-menu__body
+        &__body {
+            width: 350px;
+            height: 100%;
+            transform: translate(-100%, 0);
+            transition: all 0.3s ease 0s;
+            background-color: #ffffff;
+            padding: 45px;
+
+            ul {
+                li:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                a {
+                    display: block;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #393939;
+                }
+            }
+        }
+
+        .info-mobile-menu {
+            border-top: 1px solid #dadada;
+            margin-top: 30px;
+            padding: 20px 0;
+            // .info-mobile-menu__item
+            &__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            // .info-mobile-menu__title
+            &__title {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 150%;
+                color: $title;
+            }
+            // .info-mobile-menu__text
+            &__text {
+                display: block;
+                color: #656565;
+            }
+        }
+
+        &._active {
+            .mobile-menu__burger {
+                &::after {
+                    transform: translate(0, -9px) rotate(-40deg);
+                }
+                &::before {
+                    transform: translate(0, 9px) rotate(40deg);
+                }
+                span {
+                    transform: scale(0);
+                }
+            }
+            .mobile-menu__content {
+                backdrop-filter: blur(2px);
+                opacity: 1;
+                overflow: visible;
+                pointer-events: all;
+                .mobile-menu__body {
+                    transform: translate(0, 0);
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
+@import "../../../styles/variables.scss";
+
 .category-page {
-    padding-bottom: 145px;
     &__row {
         display: flex;
         flex-wrap: wrap;
@@ -10,7 +11,37 @@
         display: flex;
         flex: 0 1 25%;
         padding: 0 15px;
+
+        &._loading {
+            height: 408px;
+            overflow: hidden;
+            .skeleton {
+                border-radius: 20px;
+                &__body {
+                    height: 100%;
+                    width: calc(100% + 2px);
+                    display: block;
+                }
+            }
+        }
     }
     &__item {
+    }
+}
+
+@media (max-width: $tablet) {
+    .category-page__column {
+        flex: 0 1 33.333%;
+    }
+}
+@media (max-width: $mobile) {
+    .category-page__column {
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: $mobileSmall) {
+    .category-page__column {
+        flex: 0 1 100%;
+        justify-content: center;
     }
 }

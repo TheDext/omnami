@@ -33,8 +33,9 @@
                 flex: 0 1 100%;
             }
             &:not(:first-child) {
-                flex: 0 1 25%;
-                max-width: 140px;
+                // flex: 0 1 25%;
+                // max-width: 140px;
+                flex: 0 1 140px;
             }
         }
     }
@@ -90,5 +91,11 @@
         color: $textPrimary;
         border: 1px solid #c8c8c8;
         border-radius: 20px;
+    }
+}
+
+@media (max-width: $mobileSmall) { 
+    .delivery-type__type > * {
+        flex: 0 1 100% !important;
     }
 }

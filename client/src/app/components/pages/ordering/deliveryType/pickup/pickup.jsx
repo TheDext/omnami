@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 import { validator } from "../../../../../utils/validator";
-import DataPickerField from "../../../../datePickerField";
-import SelectField from "../../../../selectField";
+import DatePickerField from "../../../../form/datePickerField";
+import SelectField from "../../../../form/selectField";
 import "../deliveryType.scss";
 
 const PickUp = ({ data, onChange, errors, setErrors }) => {
@@ -69,7 +69,7 @@ const PickUp = ({ data, onChange, errors, setErrors }) => {
                 />
             </div>
             <div className="pickup__item">
-                <DataPickerField label="Когда заберете" onChange={onChange} />
+                <DatePickerField label="Когда заберете" onChange={onChange} />
             </div>
             <div className="pickup__item">
                 <SelectField

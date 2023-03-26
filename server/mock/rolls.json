@@ -1,82 +1,92 @@
 [
-    {
-        "categoryName": "rolls",
-        "_id": "Q8O4io4Yh5IUZsGuNUclq",
-        "name": "Чикен-спайси",
-        "price": 505,
-        "composition": "Рис, нори, замес крабовый, лосось, огурец, замес спайс, икра масаго.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "H0NWAKJKpm8row1h6UCEu",
-        "name": "Курица терияки",
-        "price": 484,
-        "composition": "Рис, нори, лосось, сыр сливочный, огурец, икра масаго, замес с икрой масаго, кунжут, соус терияки.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "MJmeGPrF-tUqQgn8xa5Qv",
-        "name": "Никайдо",
-        "price": 537,
-        "composition": "Огурцы, ветчина, сыр моцарелла, соус чесночный",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "CRhKpzJEauqMar0Lxn2q9",
-        "name": "Ролл Аморе",
-        "price": 418,
-        "composition": "Рис, нори, лосось, сыр сливочный, соус терияки, кунжут.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "vqrLtwXsqPI3FPE5LRt5r",
-        "name": "Филадельфия фри",
-        "price": 469,
-        "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "Kl_A4CZ11Jyle_kx3Y59Y",
-        "name": "Пикантный бекон",
-        "price": 506,
-        "composition": "Рис, нори, сыр сливочный, окунь в кляре, лосось терияки, замес с икрой масаго.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "SjEqjCZSPf7AgE-r3rWlp",
-        "name": "Ханито",
-        "price": 566,
-        "composition": "Рис, нори, сыр сливочный, огурец, тигровая креветка, замес спайси.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "J455W6QdkyP3xq61NrvRs",
-        "name": "Аляска",
-        "price": 454,
-        "composition": "Рис, нори, угорь, сыр сливочный, огурец, икра масаго, замес c икрой масаго, соус спайс.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "2eYNYBsi3l47ukvTgK8ty",
-        "name": "Хамачи",
-        "price": 482,
-        "composition": "Рис, нори, лосось, сыр сливочный, огурец, кунжут, замес с икрой масаго, соус терияки.",
-        "weight": "450гр 150ккал / 100гр"
-    },
-    {
-        "categoryName": "rolls",
-        "_id": "728BXSjIelSlWmYL1g3B_",
-        "name": "Саради",
-        "price": 568,
-        "composition": "Рис, нори, лосось, тигровая креветка, огурец, сыр сливочный, майонез, соус терияки, лук зеленый.",
-        "weight": "450гр 150ккал / 100гр"
-    }
+  {
+    "categoryName": "rolls",
+    "_id": "Q8O4io4Yh5IUZsGuNUclq",
+    "name": "Чикен-спайси",
+    "price": 505,
+    "composition": "Рис, нори, замес крабовый, лосось, огурец, замес спайс, икра масаго.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB2DYbjgg-yt0jxktX3fLbgD7r_y3Ar9QpAKWwZOyPTLqzn5Ej4HcSF2nzPlQkoKHAU8moYkL3A7pfZUPu8uhK-VRoONrlSYkFGLS1VoG5HTEAKzYYdpeW60T1l_tTX1m2AsINVdHy3wvykP2vXuUnx6PnUkkKi4ly1wQosCldaiCs6ucRcJ0XL4VdBvc_OET3w3GSNiQY_uAWjjkNcClKtw8_xdZ8Ih1XV14nLA90AXO4TMfX8bouxxnr85UvG10fvaD6ytGFiua7Ij_x_Wm7cGZbXmjE-Kl85BlSKu66G7K-WJAwjtTLk34qLDynCXkVD17Y0DWEcEIPZ01rRsyIElJ8amdijtpoTCESgdaghJGABxW5VhLw2rNi7povT0Zto/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "H0NWAKJKpm8row1h6UCEu",
+    "name": "Курица терияки",
+    "price": 484,
+    "composition": "Рис, нори, лосось, сыр сливочный, огурец, икра масаго, замес с икрой масаго, кунжут, соус терияки.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1T7hTpIpZtL647TamRTI4Pee8Hge1rBLhhBGU1eE3HsPELyxJQXGrlCw0nyEX3U2H7jCv6ondehthE7ieO6bbHhxvsEb3QySpbZs0lFp0Hz63BmkAiFC3SDKM6C0AXq5MtzgbtWlwYkWoAEvOEuWb7QgMk2LtO_LJh49iQrrc5l0I69wqUV3YjFj1q8z63o_aiNB7FiqQKIZ0MemCLfNdnm-dn1lo8okunFy1ZN--V3ZRodeqVh-SU3LGhqpBKM4r6hWuf-6EkjjjK05S80s2TS4o-J1FLNCMPNFwMzfa0TMkvdIqIdQb5QEpMP4G52ZXDT_igbRZWrKNjaFHT2JGTcwD8ZL7Qbhxsu5zbua9qIgWowKxhQw06qU_miTqq7yA/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "MJmeGPrF-tUqQgn8xa5Qv",
+    "name": "Никайдо",
+    "price": 537,
+    "composition": "Огурцы, ветчина, сыр моцарелла, соус чесночный",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3JSquOTATCroeM86c_r3cBm7mNrScT5iEsCS7loW6Q2qwTNH-MS2MQ_bjto84yo6EkZG5f5Z2Y5FN8N14ZskGug0lcgr3FYhIM7EGMoQODXhM8ony-ngLU8aRYC7MK1qoADPaRBSRiXk12wCLjLSXEDLqbqE7xD7vUiQIR8-j8HYR4UonBiC7Iaac0boNvei4ymUAqVZoIktq-Do8jSX0cCZatB0OAoeFo_OhAgpGDm3n8WCDKh8Yw_bDCRis83HPOYtbtMZMuhDFeZvogb9uz32Ws3MA4YZsqpcgWyfEI9hy3r9hyQyhlCcwxe6vvx2-izpoHAlqOki-0GehVLAhmVG4qgmAfpGskw5aF2PEx1CAPNQMJWZd83Fl9jXQjEbc/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "CRhKpzJEauqMar0Lxn2q9",
+    "name": "Ролл Аморе",
+    "price": 418,
+    "composition": "Рис, нори, лосось, сыр сливочный, соус терияки, кунжут.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB1djXraJ3f53W8Dt_DlDjY5qopddhSDZJuFcyB0ieKrmfhcQ7KdX53jRtX6-4V5AhgwRpdEZWlPvSW1S3sxT_E1tyzvk368O_6MAysBbfzZJRdrK5b0yOhYsG2aTm6FYBedsQBSEEImDVjT9BVEM8QyURPFONxICN8p-Xn5fm6Wug8a6lgWN6VjSzugUxCXkURZ7G5XW54Pvq0m05T-SDiaO6O5IjjRIqNpQg5LY8Kk6n70veEV0UX-TSzy6BKtbrAQWTAgK5hRrxg5D0Eqm3NIKyhyK459OcjPAx36vT52DcxDvYt0w_iVyQAKCrjz2fR4bIdMQrH6o5n5NScUBiDwPgKN7zvNWhui1N0Ha4mJerfHru1TM8HkkvtYyZrlJwY/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "vqrLtwXsqPI3FPE5LRt5r",
+    "name": "Филадельфия фри",
+    "price": 469,
+    "composition": "Мясной соус болоньезе, соус бургер, соленые огурчики, лук, мацарелла",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB330VZi1In0qUIivi4aUae1iZ7k0c3NkLTd62PKJyZx0OhRu_H8Vv_B4lvXRqc7k3pMNyb_mqRl6SX6fxljJ8BGHIswRIEqN64mzsxyyct9PFATsX-6LwXqfVOPDhrftV1BK_jDnG_TzxJrjBDPhYK3eUaiv15cMx-bQvNzf0NmmbqPxy_WHmz5bLhFPxY9ViEl4I8IFlCS_dOlA1N-ZItfOUsl9NCmRkC6SxRFFAIPbVNjnijsJs9fP4qqDJY2nBQC-Lrl8GfeWqWCXdLRqCz4nm_l8bycYs_uUrTbWnhlQhsSvT-x6Z-rLUXCQw1jqBVyP8QBMuQcZtyCAm5YXLV-coPDU4J2fhEKzPUnfZ2bqcn79CWIXaGw8sKA2VhDA1c/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "Kl_A4CZ11Jyle_kx3Y59Y",
+    "name": "Пикантный бекон",
+    "price": 506,
+    "composition": "Рис, нори, сыр сливочный, окунь в кляре, лосось терияки, замес с икрой масаго.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3jAE8SefKqsoSQc4M9BuCMhygZ4S5LTszuggFK9mapFa-cEio3lXgWJP8RYp90x_tErQxkIkyEsLd_spuWMF4OsZiM0q_52k3zy72YP3sGR6Cucb0SFT51wKB463Fy5TWEerzSzd-lOTvPdvN5wljEJqdyO6LBcFJIPG_VgQD11D7PGjnJMoLKZ1VdGQrZ1901U-85ol6Qb1EUeNIUY7khbaWjiImmmTrvxdlELo08kDFLTi9Fka1Sl3cofRrurHL1jSsOS3mMZKpr8DDm7tvL8vlGt-eeig_Gc5NjRBTsbboc9o3UGeiTh9WLP8JPnohO0JOX3ba9El4LXJ_v0EV8_eOpauHBaDHD3Em-k00lJtRZnjIKJRvRL2JGLWPs7G4/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "SjEqjCZSPf7AgE-r3rWlp",
+    "name": "Ханито",
+    "price": 566,
+    "composition": "Рис, нори, сыр сливочный, огурец, тигровая креветка, замес спайси.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3w_vmv3FiUHP65c62Ay9dcWLiMAqRbZvDwtpvr8mMVDRMJIAxjeeAbp72f9fj0-qIvIkZlwS6jtnm-ZhNOi9jCGAQt2tg0JVIm6fwELkPZsr6cxcyqxHwQQhE3-7SbhbLFvsRAZwbredr535HFzcda9oYsz9e4brEnPIfn886HuEYC2vf66K0FPPheWQT-rNR-BNi2fB_qqsp6phMukrceNNraYs7mzcO2iafM8m71qjYd8zeU9Msd0_cBaj7h-VnYd0ldne8FBbu3Ggwo_7HjQvqc_5HwPYajxaBKtYZdQGuUrFr2A_CvfmKD1M-0FKtBiJtWf0pWtg7fuY5z1hu17fQ7NhxlkWApg1wgMg7vfRJQVPjtoOsK0dmx62m-bpY/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "J455W6QdkyP3xq61NrvRs",
+    "name": "Аляска",
+    "price": 454,
+    "composition": "Рис, нори, угорь, сыр сливочный, огурец, икра масаго, замес c икрой масаго, соус спайс.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3g8lNdi-WISCBF4xlEB3dMg55anjfN3zGanXAnV085KiBfygZrHLyy9b_TKPwfznt0iDVmP_iay9LD4RAtb7Suyb4W_VzWdyeHoNzcE9W7_Z1pGvCDZaJd4ocUG53lXdIAIrHQilkwyjyGDaFPEPWWE1-mUXMLAlyXX2v2FKBpAXSRjuoX4JtiXLIiO_i9E_MdkqK4mDz7o_zUUtwQ_hgdj5-SrcplXVzl4I_qblchhvZ3r1WFofYTj8kkfaLtzXJg6EFjf2mDTWjW271INxEnolOATjzpoyYReJp5hclnww5EqjI38UYbPvjV9VZAxlF0sJWqkwFyIWue3lEFrM_en2MPNbTF5-boKVYUpMVFO6HlUpNdGX9uxt-RjPQHgh4/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "2eYNYBsi3l47ukvTgK8ty",
+    "name": "Хамачи",
+    "price": 482,
+    "composition": "Рис, нори, лосось, сыр сливочный, огурец, кунжут, замес с икрой масаго, соус терияки.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB221NmbM9wdetBJwe7khsnJcYaB879NHCM6hG6SvL_KFFZpLydt4HHwVs3U8Zliz3zy09fAtNw2u5Fm1wdbUEqf5Wfhvp8KzdAjB69PJ7ayw-ulD2gIATF1VazpfO9lPEQMjGiAxEkfcEv9UCJ3VKm5Y-8hDUnN6pdl46vjdPp90cfCYvPX47LUNajmQOQr3cVv3L56Pqvka8E9XdHG4IiIfibw0hEg4uHVtTGb6UXjL9AdCIAp9AlUNQhbGflCLx7PrjZ5OXe98_mt1NDMU7lbH1FUfSkTiHJ24kKJG54sgLoypaKHaspQ7z71gfm-iZqCJMO2M3MmkgjLp9JYKnsbIyNNgHIbsnbrtI7bx-HpJVrf3SweKKaRvmOZwVeRfvI/p.jpeg"
+  },
+  {
+    "categoryName": "rolls",
+    "_id": "728BXSjIelSlWmYL1g3B_",
+    "name": "Саради",
+    "price": 568,
+    "composition": "Рис, нори, лосось, тигровая креветка, огурец, сыр сливочный, майонез, соус терияки, лук зеленый.",
+    "weight": "450гр 150ккал / 100гр",
+    "img": "https://previews.dropbox.com/p/thumb/AB3FCNVM55iG4HJ8XW_VgFCnBEL2bktB6ipwB3urQ4p_6se_Bd_f-FfXg-l-ZqW0HM6Koel_PBj4bZJzR-yH3wzi2pOwwqWQ3yC1zk_Td7xOvRf9u5LfDRXUQKwbp3Wlkb9gVgvIaTWxIwa-T5oWwJ-XHq479I4g28HveTu1no5ruij85biOVRlLJpo_7Ui90AThSiPIBtCMZ09qvW6WIE5_K0o_SaFyLjOfObxXmnOJ6OKSYjh1klzQO8uMZrFrE6IyUxDlgpAkwXCHwcP11Y6YqRGG3-H6UZVBsnq3zqwJYTExiR_eqICbf4C7S2UYAUGXKZWzTqoPklDxm20pTSvdpXk17-EcXDspSJ1EilsNrPxp7ZbI4etOWqc5if5bWFY/p.jpeg"
+  }
 ]

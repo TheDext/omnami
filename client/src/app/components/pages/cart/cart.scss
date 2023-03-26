@@ -1,7 +1,7 @@
 @import "../../../styles/templates.scss";
+@import "../../../styles/variables.scss";
 
 .cart {
-    padding-bottom: 120px;
     &__body {
         margin-top: 30px;
     }
@@ -18,23 +18,26 @@
     margin-top: 40px;
     margin-left: auto;
     @extend %title;
-    font-size: 30px;
+    font-size: 25px;
     text-align: right;
-    // .order-price__num
-    &__num {
+    // .order-price__sum
+    &__sum {
         margin: 0 0 0 10px;
         font-weight: 600;
         font-size: 25px;
         line-height: 34px;
+        white-space: nowrap;
     }
 }
 .cart-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    column-gap: 30px;
     // .cart-buttons__btn
     &__btn {
         flex: 0 1 255px;
+        text-align: center;
         // .cart-buttons__btn_back
         &_back {
             @extend %greyButton;
@@ -42,6 +45,20 @@
         // .cart-buttons__btn_order
         &_order {
             @extend %redButton;
+        }
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .cart__body {
+        padding: 40px 15px;
+    }
+    .cart-buttons {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        &__btn {
+            flex: 0 1 100%;
         }
     }
 }

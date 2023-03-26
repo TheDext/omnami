@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useEffect } from "react";
 import { validator } from "../../../../../utils/validator";
-import TextField from "../../../../textField";
+import TextField from "../../../../form/textField";
 
 const Delivery = ({ data, onChange, errors, setErrors }) => {
     const validatorConfig = {
@@ -32,14 +32,14 @@ const Delivery = ({ data, onChange, errors, setErrors }) => {
     return (
         <div className="delivery-type__type delivery-type__type_delivery">
             <TextField
-                label="Улица"
+                label="Улица*"
                 name="street"
                 value={data.street}
                 onChange={onChange}
                 error={errors.street}
             />
             <TextField
-                label="Дом"
+                label="Дом*"
                 name="house"
                 value={data.house}
                 onChange={onChange}

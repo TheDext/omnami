@@ -16,6 +16,7 @@
     visibility: hidden;
     transition: all 0.3s ease 0s;
     z-index: 2;
+    padding: 0 15px;
     &._active {
         opacity: 1;
         visibility: visible;
@@ -77,6 +78,11 @@
     &__submit {
         width: 100%;
         @extend %orangeButton;
+    }
+    // auth-modal__error
+    &__error {
+        margin: 5px 0 0 0;
+        color: red;
     }
 
     .text-field {

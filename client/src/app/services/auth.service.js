@@ -29,7 +29,7 @@ const authService = {
         return data;
     },
     refresh: async () => {
-        const { data } = httpAuth.post("token", {
+        const { data } = await httpAuth.post("token", {
             grant_type: "refresh_token",
             refresh_token: localStorageService.getRefreshToken()
         });
